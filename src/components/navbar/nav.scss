@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+html {
+  scroll-snap-type: mandatory;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: Popons;
+  src: url(././../../../Poppins/Poppins-Light.ttf);
+}
+header {
+  width: 100%;
+  // background: linear-gradient(
+  //   101.63deg,
+  //   #230a5c -21.52%,
+  //   #241788 55.18%,
+  //   #2542d0 93.18%
+  // );
+  background-image: url(../../assets/img/fot.png);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  box-shadow: 0px 3px 16px 0px rgb(0 0 0 / 10%);
+}
+nav {
+  width: 100%;
+  height: 70px;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 3px 16px 0px rgb(0 0 0 / 10%);
+  .nav {
+    width: 100%;
+    height: 70px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+    position: relative;
+    z-index: 99;
+    overflow: hidden;
+    .nav1 {
+      width: 1300px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: white;
+      font-family: "Poppins", sans-serif;
+      transition: all 0.4s ease;
+      position: relative;
+      z-index: 99;
+
+      ul {
+        position: relative;
+        transition: all 1.3s ease;
+        animation-name: animatin;
+        animation-duration: 0.8s;
+      }
+    }
+    h1 {
+      color: #fff;
+      font-size: 32px;
+      font-weight: 550;
+      text-decoration: none;
+      letter-spacing: 1.2px;
+      position: relative;
+      transition: all 1.3s ease;
+      animation-name: animatin;
+      animation-duration: 0.8s;
+    }
+    ul {
+      display: flex;
+    }
+    .activ,
+    .activ1,
+    .activ2 {
+      width: 0px;
+      height: 1.5px;
+      border-radius: 8px;
+      background-color: #65e6a1;
+      transition: 0.3s;
+      margin-left: 20px;
+      position: absolute;
+    }
+  }
+
+  .nav.sticky {
+    background-color: #1c33e4db;
+    position: fixed;
+    height: 65px;
+    top: 0;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.13);
+    .nav1 {
+      padding: 1px 1px;
+    }
+  }
+  a {
+    padding-left: 20px;
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+  }
+  a:hover {
+    color: hsl(148, 100%, 71%);
+  }
+
+  .nav-hover:hover {
+    .activ {
+      width: 50px;
+    }
+    .activ1 {
+      width: 40px;
+    }
+    .activ2 {
+      width: 70px;
+    }
+  }
+}
+
+.nav-itme {
+  width: 1300px;
+  margin: 0 auto;
+  position: relative;
+  transition: all 1.3s ease;
+  animation-name: animatin;
+  animation-duration: 1s;
+
+  h2 {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 400;
+    padding-top: 150px;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 1px;
+  }
+  h1 {
+    color: #fff;
+    font-size: 45px;
+    font-weight: 600;
+    padding-top: 10px;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 1px;
+  }
+  .ss {
+    font-size: 30px;
+    letter-spacing: 1px;
+    color: #65e6a1;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 1px;
+    font-weight: 550;
+  }
+  .typed-cursor {
+    font-size: 30px;
+    color: white;
+  }
+  button {
+    width: 190px;
+    display: block;
+    height: 45px;
+    margin-top: 25px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 550;
+    color: hsl(180, 20%, 91%);
+    transition: 0.9s;
+    background: linear-gradient(
+      to right,
+      #089290 0%,
+      #65e6a1 51%,
+      hsla(226, 93%, 59%, 0.843) 100%
+    );
+    background-size: 200% auto;
+  }
+  button:hover {
+    background-position: right center;
+    transition: all 0.8s ease;
+  }
+}
+
+@keyframes animatin {
+  0% {
+    opacity: 0;
+    transform: translateY(90px);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 1380px) {
+.nav{
+  width: 80%;
+  
+}
+
+  .nav-itme {
+    width: 90%;
+  }
+  nav{
+    .nav{
+.nav1{
+  width: 90%;
+}
+    }
+  }
+}

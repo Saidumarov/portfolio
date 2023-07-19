@@ -1,0 +1,146 @@
+.skills {
+  width: 100%;
+  height: 750px;
+  background: linear-gradient(
+    101.63deg,
+    #230a5c -21.52%,
+    #241788 55.18%,
+    #2542d0 93.18%
+  );
+  // margin-bottom: 300px;
+}
+
+.skills-me {
+  text-align: center;
+  padding-top: 80px;
+  font-family: "Poppins", sans-serif;
+  font-size: 35px;
+  color: #3cc099;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.skills-me::before {
+  content: "";
+  position: absolute;
+  margin-top: 56px;
+  left: 50%;
+  width: 140px;
+  height: 4px;
+  background: #3cc099;
+  transform: translateX(-50%);
+}
+
+.skills-me::after {
+  content: "";
+  position: absolute;
+  margin-top: 51px;
+  left: 50%;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #3cc099;
+  transform: translateX(-50%);
+}
+.skills-itme {
+  width: 1300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.skills-itmes {
+  width: 45%;
+  height: 450px;
+
+  h2 {
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-weight: 550;
+    padding-top: 50px;
+    div {
+      display: inline-block;
+
+      width: 80px;
+      height: 4px;
+      background-color: rgba(237, 35, 159, 0.6);
+      filter: blur(4px);
+      border-radius: 4px;
+    }
+  }
+  p {
+    font-family: "Poppins", sans-serif;
+    padding-top: 25px;
+    letter-spacing: 0.5px;
+    // font-weight: 500;
+    color: #ffffff;
+  }
+  button {
+    width: 140px;
+    display: block;
+    height: 45px;
+    margin-top: 25px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 550;
+    color: hsl(180, 20%, 91%);
+    transition: 0.9s;
+    background: linear-gradient(
+      to right,
+      #089290 0%,
+      #65e6a1 51%,
+      hsla(226, 93%, 59%, 0.843) 100%
+    );
+    background-size: 200% auto;
+  }
+  button:hover {
+    background-position: right center;
+    transition: all 0.8s ease;
+  }
+}
+.skills-itmes1 {
+  width: 47%;
+  height: 450px;
+  // background-color: #230a5c;
+}
+
+.html {
+  width: 100%;
+  .html-name {
+    display: flex;
+    justify-content: space-between;
+h3{
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-weight: 500;
+}
+  }
+  .html-itme {
+    width: 100%;
+    height: 18px;
+    background-color: #CCCCCC;
+    border-radius: 3px;
+  }
+  .html-inle{
+    width: 0%;
+    height: 100%;
+    background-color: #E45126;
+    animation-name: html;
+    animation-duration: 6s;
+    transition: all 6s ease;
+
+  }
+
+  // @keyframes html {
+  //   0%{
+  //     width: 0px;
+  //   }
+  //   100%{
+  //     width: 90%;
+  //   }
+  // }
+}
