@@ -205,11 +205,11 @@ nav {
   }
 }
 
-.bar1{
+.bar1 {
   display: none;
 }
 
-.nav-bar{
+.nav-bar {
   display: none;
 }
 @media screen and (max-width: 1380px) {
@@ -224,69 +224,64 @@ nav {
     .nav {
       .nav1 {
         width: 90%;
-  
       }
     }
   }
 }
 
 @media screen and (max-width: 768px) {
-
   .bar1.active .barr:nth-child(2) {
     opacity: 0;
-}
+  }
 
-
-.bar1.active .barr:nth-child(1) {
+  .bar1.active .barr:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
-}
+  }
 
-.bar1.active .barr:nth-child(3) {
+  .bar1.active .barr:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
-}
+  }
 
-.nav-bar.active {
-  left: 0;
-}
-.barr {
-  width: 40px;
-  height: 3px;
-  background-color:white;
-  margin: 5px auto 0 auto;
-
-}
-.bar1{
-  display: block;
-  position: absolute;
-  right: 0;
-}
-.nav-bar{
-  display: block;
-  width: 80%;
-  height: 100%;
-  background-color: #089290;
-  position: fixed;
-  left: -100%;
-  z-index: 999;
-  transition: .5s;
-  ul{
+  .nav-bar.active {
+    left: 0;
+  }
+  .barr {
+    width: 40px;
+    height: 3px;
+    background-color: white;
+    margin: 5px auto 0 auto;
+  }
+  .bar1 {
     display: block;
-    display: grid;
-    grid-template-columns: auto;
-    a{
+    position: absolute;
+    right: 0;
+  }
+  .nav-bar {
+    display: block;
+    width: 80%;
+    height: 100%;
+    background-color: #089290;
+    position: fixed;
+    left: -100%;
+    z-index: 999;
+    transition: 0.5s;
+    ul {
       display: block;
-      color: white;
+      display: grid;
+      grid-template-columns: auto;
+      a {
+        display: block;
+        color: white;
+      }
     }
   }
-}
 
-  ul{
-    a{
+  ul {
+    a {
       display: none;
     }
   }
 }
-
 
 @media screen and (max-width: 650px) {
   .nav-itme {
@@ -294,7 +289,6 @@ nav {
       color: #ffff;
       font-size: 32px;
       padding-top: 150px;
-
     }
     h1 {
       color: #fff;
@@ -313,13 +307,12 @@ nav {
       width: 140px;
       height: 43px;
       margin-top: 40px;
-   font-size: 15px;
+      font-size: 15px;
     }
     h2 {
       color: #fff;
       font-size: 26px;
       padding-top: 150px;
-
     }
     h1 {
       color: #fff;
@@ -331,9 +324,6 @@ nav {
       font-weight: 4000;
     }
   }
-
-
-
 }
 
 @media screen and (max-width: 422px) {
@@ -354,5 +344,9 @@ nav {
       color: hwb(149 32% 0%);
       font-weight: 650;
     }
+  }
+  header {
+    background-image: url(../../assets/img/fot.jpg);
+background-position: right;
   }
 }

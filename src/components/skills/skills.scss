@@ -41,6 +41,13 @@
   background: #3cc099;
   transform: translateX(-50%);
 }
+.skills-itme{
+  .skills-itmes{
+    p{
+       text-align: justify;
+    }
+  }
+}
 .skills-itme {
   width: 1300px;
   display: flex;
@@ -244,7 +251,7 @@ height: auto;
 }
 .skills-itmes1{
   width: 100%;
-height: 400px;
+height: 450px;
   margin-top: 50px;
 
 }
@@ -265,8 +272,9 @@ height: auto;
   }
   .skills-itme{
     h2{
-      padding-top: 0;
+      padding-top: 0px;
       font-size: 22px;
+      margin-top: -15px;
       div{
         width: 43px;
       }
@@ -278,5 +286,6 @@ height: auto;
     width: 100%;
 
   }
+
 
 }
