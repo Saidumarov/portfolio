@@ -1,25 +1,26 @@
 import React, { useEffect, useState } from "react";
 import "./skills.scss";
+import Css from "./Css";
+import Sass from "./Sass";
+import Js from "./Js";
+import React1 from "./React";
 const Skills = () => {
-  // const [currentNumber, setCurrentNumber] = useState(1);
+  const [currentNumber, setCurrentNumber] = useState();
+  const [countdownStarted, setCountdownStarted] = useState(false);
+  const [wiz, setWiz] = useState();
 
-  // useEffect(() => {
-  //   if (currentNumber <= 99) {
-  //     const interval = setInterval(() => {
-  //       setCurrentNumber((prevNumber) => {
-  //         if (prevNumber === 1) {
-  //           return 2;
-  //         } else {
-  //           return prevNumber + 1;
-  //         }
-  //       });
-  //     }, 80);
+  useEffect(() => {
+    const handleScroll = () => {
+      if (!countdownStarted && window.scrollY > 1000) {
+        setCountdownStarted(true);
+        setWiz(90);
+        setCurrentNumber(1);
+      }
+    };
 
-  //     return () => clearInterval(interval);
-  //   }
-  // }, [currentNumber]);
-  const [currentNumber, setCurrentNumber] = useState(1);
-  const [countdownStarted, setCountdownStarted] = useState(true);
+    window.addEventListener("scroll", handleScroll);
+    return () => removeEventListener("scroll", handleScroll);
+  }, [countdownStarted]);
 
   useEffect(() => {
     if (countdownStarted && currentNumber <= 89) {
@@ -30,29 +31,15 @@ const Skills = () => {
           } else {
             clearInterval(interval);
             setCountdownStarted(false);
-            // Set countdownStarted to false to indicate completion
             return prevNumber;
           }
         });
-      }, 58);
+      }, 50);
 
       return () => clearInterval(interval);
     }
   }, [currentNumber, countdownStarted]);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (!countdownStarted && window.scrollY > 1500) {
-        console.log("Scrolled beyond 1500px");
-        setCurrentNumber(1);
-        setCountdownStarted(true); // Set countdownStarted to true to start the countdown again
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [countdownStarted]);
   return (
     <div id="skills">
       <div className="skills">
@@ -76,11 +63,23 @@ const Skills = () => {
           <div className="skills-itmes1 reveal">
             <div className="html">
               <div className="html-name">
-                <h3>HTML</h3> <h3>{currentNumber}%</h3>
+                <h3>Html</h3> <h3>{currentNumber}%</h3>
               </div>
               <div className="html-itme">
-                <div className="html-inle" ></div>
+                <div className="html-inle" style={{ width: `${wiz}%` }}></div>
               </div>
+            </div>
+            <div className="css1">
+              <Css />
+            </div>
+            <div className="sass">
+              <Sass />
+            </div>
+            <div className="js">
+              <Js />
+            </div>
+            <div className="react1">
+              <React1 />
             </div>
           </div>
         </div>

@@ -204,20 +204,155 @@ nav {
     opacity: 1;
   }
 }
-@media screen and (max-width: 1380px) {
-.nav{
-  width: 80%;
-  
+
+.bar1{
+  display: none;
 }
+
+.nav-bar{
+  display: none;
+}
+@media screen and (max-width: 1380px) {
+  .nav {
+    width: 80%;
+  }
 
   .nav-itme {
     width: 90%;
   }
-  nav{
-    .nav{
-.nav1{
-  width: 90%;
+  nav {
+    .nav {
+      .nav1 {
+        width: 90%;
+  
+      }
+    }
+  }
 }
+
+@media screen and (max-width: 768px) {
+
+  .bar1.active .barr:nth-child(2) {
+    opacity: 0;
+}
+
+
+.bar1.active .barr:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.bar1.active .barr:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.nav-bar.active {
+  left: 0;
+}
+.barr {
+  width: 40px;
+  height: 3px;
+  background-color:white;
+  margin: 5px auto 0 auto;
+
+}
+.bar1{
+  display: block;
+  position: absolute;
+  right: 0;
+}
+.nav-bar{
+  display: block;
+  width: 80%;
+  height: 100%;
+  background-color: #089290;
+  position: fixed;
+  left: -100%;
+  z-index: 999;
+  transition: .5s;
+  ul{
+    display: block;
+    display: grid;
+    grid-template-columns: auto;
+    a{
+      display: block;
+      color: white;
+    }
+  }
+}
+
+  ul{
+    a{
+      display: none;
+    }
+  }
+}
+
+
+@media screen and (max-width: 650px) {
+  .nav-itme {
+    h2 {
+      color: #fff;
+      font-size: 32px;
+      padding-top: 150px;
+
+    }
+    h1 {
+      color: #fff;
+      font-size: 38px;
+      padding-top: 10px;
+    }
+    .ss {
+      font-size: 22px;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .nav-itme {
+    button {
+      width: 140px;
+      height: 43px;
+      margin-top: 40px;
+   font-size: 15px;
+    }
+    h2 {
+      color: #fff;
+      font-size: 26px;
+      padding-top: 150px;
+
+    }
+    h1 {
+      color: #fff;
+      font-size: 32px;
+      padding-top: 10px;
+    }
+    .ss {
+      font-size: 20px;
+      font-weight: 4000;
+    }
+  }
+
+
+
+}
+
+@media screen and (max-width: 422px) {
+  .nav-itme {
+    h2 {
+      font-size: 23px;
+      padding-top: 150px;
+    }
+    h1 {
+      color: #fff;
+      font-size: 26px;
+      padding-top: 10px;
+    }
+    .ss {
+      font-size: 18px;
+      font-family: sans-serif;
+      letter-spacing: 0px;
+      color: hwb(149 32% 0%);
+      font-weight: 650;
     }
   }
 }

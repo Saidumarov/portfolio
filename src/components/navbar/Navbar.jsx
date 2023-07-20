@@ -1,5 +1,5 @@
 import "./nav.scss";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Typed from "typed.js";
 
 const Navbar = () => {
@@ -28,8 +28,49 @@ const Navbar = () => {
     document.documentElement.scrollTop = 0;
   };
 
+  // bar menyu
+  const [isactiva , setActiva] = useState(false)
+  const [isactiv , setActiv] = useState(false)
+  const bar = () =>{
+      setActiv(!isactiv)
+      setActiva(!isactiv)
+  }
+
+
+
+     
+     
+  
   return (
     <div>
+      <div className={`nav-bar ${isactiva ? 'active' : ''}`} >
+              <ul>
+                <div className="nav-hover" onClick={handleClick}>
+                  <a style={{cursor:"pointer"}}> Home</a>
+                  <div className="activ"></div>
+                </div>
+                <div className="nav-hover">
+                  <a href="#about">About</a>
+                  <div className="activ"></div>
+                </div>
+                <div className="nav-hover">
+                  <a href="#skills">Skills </a>
+                  <div className="activ1"></div>
+                </div>
+                <div className="nav-hover">
+                  <a href="">Services </a>
+                  <div className="activ2"></div>
+                </div>
+                <div className="nav-hover">
+                  <a href="">Work </a>
+                  <div className="activ1"></div>
+                </div>
+                <div className="nav-hover">
+                  <a href="">Contact</a>
+                  <div className="activ2"></div>
+                </div>
+              </ul>
+              </div>
       <header>
         <nav>
           <div className="nav">
@@ -61,6 +102,12 @@ const Navbar = () => {
                   <div className="activ2"></div>
                 </div>
               </ul>
+              <div className={`bar1 ${isactiv ? 'active' : ''}`} onClick={bar}>
+              <div className="barr" style={{ transition: ".4s" }}></div>
+            <div className="barr" style={{ transition: ".2s" }}></div>
+            <div className="barr" style={{ transition: ".4s" }}></div>
+              </div>
+              
             </div>
           </div>
         </nav>
