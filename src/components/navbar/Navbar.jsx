@@ -29,48 +29,61 @@ const Navbar = () => {
   };
 
   // bar menyu
-  const [isactiva , setActiva] = useState(false)
-  const [isactiv , setActiv] = useState(false)
-  const bar = () =>{
-      setActiv(!isactiv)
-      setActiva(!isactiv)
-  }
+  const [isactiva, setActiva] = useState(false);
+  const [isactiv, setActiv] = useState(false);
+  const bar = () => {
+    setActiv(!isactiv);
+    setActiva(!isactiv);
+  };
 
+  const a = () => {
+    setActiv(!isactiv);
+    setActiva(!isactiv);
+  };
 
-
-     
-     
-  
   return (
     <div>
-      <div className={`nav-bar ${isactiva ? 'active' : ''}`} >
-              <ul>
-                <div className="nav-hover" onClick={handleClick}>
-                  <a style={{cursor:"pointer"}}> Home</a>
-                  <div className="activ"></div>
-                </div>
-                <div className="nav-hover">
-                  <a href="#about">About</a>
-                  <div className="activ"></div>
-                </div>
-                <div className="nav-hover">
-                  <a href="#skills">Skills </a>
-                  <div className="activ1"></div>
-                </div>
-                <div className="nav-hover">
-                  <a href="">Services </a>
-                  <div className="activ2"></div>
-                </div>
-                <div className="nav-hover">
-                  <a href="">Work </a>
-                  <div className="activ1"></div>
-                </div>
-                <div className="nav-hover">
-                  <a href="">Contact</a>
-                  <div className="activ2"></div>
-                </div>
-              </ul>
-              </div>
+      <div className={`nav-bar ${isactiva ? "active" : ""}`}>
+        <ul>
+          <div className="nav-hover" onClick={handleClick}>
+            <a onClick={a} style={{ cursor: "pointer" }}>
+              {" "}
+              Home
+            </a>
+            <div className="activ"></div>
+          </div>
+          <div className="nav-hover">
+            <a onClick={a} href="#about">
+              About
+            </a>
+            <div className="activ"></div>
+          </div>
+          <div className="nav-hover">
+            <a onClick={a} href="#skills">
+              Skills{" "}
+            </a>
+            <div className="activ1"></div>
+          </div>
+          <div className="nav-hover">
+            <a onClick={a} href="#services">
+              Services
+            </a>
+            <div className="activ2"></div>
+          </div>
+          <div className="nav-hover">
+            <a onClick={a} href="#work">
+              Work{" "}
+            </a>
+            <div className="activ1"></div>
+          </div>
+          <div className="nav-hover">
+            <a onClick={a} href="#contact">
+              Contact
+            </a>
+            <div className="activ2"></div>
+          </div>
+        </ul>
+      </div>
       <header>
         <nav>
           <div className="nav">
@@ -78,7 +91,7 @@ const Navbar = () => {
               <h1>Ja'farxon</h1>
               <ul>
                 <div className="nav-hover" onClick={handleClick}>
-                  <a style={{cursor:"pointer"}}> Home</a>
+                  <a style={{ cursor: "pointer" }}> Home</a>
                   <div className="activ"></div>
                 </div>
                 <div className="nav-hover">
@@ -90,24 +103,23 @@ const Navbar = () => {
                   <div className="activ1"></div>
                 </div>
                 <div className="nav-hover">
-                  <a href="">Services </a>
+                  <a href="#services">Services </a>
                   <div className="activ2"></div>
                 </div>
                 <div className="nav-hover">
-                  <a href="">Work </a>
+                  <a href="#work">Work </a>
                   <div className="activ1"></div>
                 </div>
                 <div className="nav-hover">
-                  <a href="">Contact</a>
+                  <a href="#contact">Contact</a>
                   <div className="activ2"></div>
                 </div>
               </ul>
-              <div className={`bar1 ${isactiv ? 'active' : ''}`} onClick={bar}>
-              <div className="barr" style={{ transition: ".4s" }}></div>
-            <div className="barr" style={{ transition: ".2s" }}></div>
-            <div className="barr" style={{ transition: ".4s" }}></div>
+              <div className={`bar1 ${isactiv ? "active" : ""}`} onClick={bar}>
+                <div className="barr" style={{ transition: ".4s" }}></div>
+                <div className="barr" style={{ transition: ".2s" }}></div>
+                <div className="barr" style={{ transition: ".4s" }}></div>
               </div>
-              
             </div>
           </div>
         </nav>

@@ -61,15 +61,3 @@ function About() {
 }
 
 export default About;
-
-{
-  /* <i class="fas fa-file-code"></i>
-<i class="fas fa-palette"></i>
-<i class="fas fa-object-group"></i>
-<i class="fas fa-map-marker-alt"></i>
-<i class="fas fa-phone"></i>
-<i class="fas fa-envelope"></i>
-<i class="fas fa-globe"></i>
-<i class="fab fa-instagram"></i>
- */
-}

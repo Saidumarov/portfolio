@@ -1,17 +1,23 @@
 import React from "react";
 import Navbar from "./components/navbar/Navbar";
 import About from "./components/about/About";
-import "./index"
+import "./index";
 import Skills from "./components/skills/Skills";
-// import NumberGenerator from "./components/skills/Nan";
+import Workdata from "./components/work/Workdata";
+import Contact from "./components/contact/Contact";
+import Services from "./components/services/Services";
+
+
 
 function App() {
   return (
     <div>
       <Navbar />
       <About />
-      <Skills/>
-      {/* <NumberGenerator/> */}
+      <Skills />
+      <Services />
+      <Workdata/>
+      <Contact/>
     </div>
   );
 }
