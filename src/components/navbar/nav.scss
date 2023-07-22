@@ -211,6 +211,51 @@ nav {
 
 .nav-bar {
   display: none;
+  h3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 550;
+    text-align: center;
+    font-size: 28px;
+    color: rgba(0, 0, 0, 0.833);
+    color: white;
+  }
+  ul {
+    .nav-hover {
+      width: 70%;
+      height: 40px;
+      margin: 0 auto;
+      margin-top: 5px;
+      display: flex;
+      align-items: center;
+
+      justify-content: space-between;
+      border-radius: 6px;
+      a {
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.831);
+
+        font-family: sans-serif;
+        i {
+          font-size: 22px;
+
+          color: #06bcb9;
+        }
+      }
+    }
+  }
+}
+.nav-bar-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 20px;
+  border: 12px solid hsla(223, 97%, 55%, 0.767);
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
 }
 @media screen and (max-width: 1380px) {
   .nav {
@@ -260,7 +305,12 @@ nav {
     display: block;
     width: 80%;
     height: 100%;
-    background-color: #089290;
+    background: linear-gradient(
+      101.63deg,
+      #230a5c -21.52%,
+      #241788 55.18%,
+      #2542d0 93.18%
+    );
     position: fixed;
     left: -100%;
     z-index: 999;
@@ -271,7 +321,7 @@ nav {
       grid-template-columns: auto;
       a {
         display: block;
-        color: white;
+        color: black;
       }
     }
   }
@@ -311,7 +361,7 @@ nav {
     }
     h2 {
       color: #fff;
-  font-size: 31px;
+      font-size: 31px;
 
       padding-top: 100px;
     }
@@ -319,16 +369,14 @@ nav {
     .ss {
       font-size: 20px;
       font-weight: 4000;
-      color:#4befa0;
+      color: #4befa0;
     }
   }
 }
 
 @media screen and (max-width: 422px) {
-
   header {
     background-image: url(../../assets/img/fot.png);
-  background-position: calc(-420px);
-
+    background-position: calc(-420px);
   }
 }

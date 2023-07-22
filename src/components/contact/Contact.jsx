@@ -4,10 +4,13 @@ const Contact = () => {
   const [fulnam, setFulnam] = useState("");
   const [tel, setTel] = useState("");
   const [email, setEmail] = useState("");
+  const name = document.querySelector("#nem");
+  const tell = document.querySelector("#tel");
+  const text = document.querySelector("#text");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
+    rest();
     const id = 1121426146;
     const bot = "6229717040:AAH25e0ViIbOVvb0njOkVVElFf_H7Ol3lGA";
 
@@ -27,6 +30,13 @@ const Contact = () => {
       .then((res) => res.json())
       .then((data) => console.log(data));
   };
+
+ const rest = () =>{
+  text.value = ''
+  name.value = ''
+  tell.value = ''
+
+ }
   return (
     <div id="contact">
       <div className="contact">
@@ -63,12 +73,14 @@ const Contact = () => {
                 required
                 value={fulnam}
                 onChange={(e) => setFulnam(e.target.value)}
+                id="nem"
               />
               <input
                 type="email"
                 placeholder="Email"
                 required
                 value={tel}
+                id="tel"
                 onChange={(e) => setTel(e.target.value)}
               />
               <textarea
@@ -77,6 +89,7 @@ const Contact = () => {
                 placeholder="Message"
                 required
                 value={email}
+                id="text"
                 onChange={(e) => setEmail(e.target.value)}
               ></textarea>
               <button type="submit">SEND</button>

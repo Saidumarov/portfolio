@@ -1,6 +1,7 @@
 import "./nav.scss";
 import React, { useEffect, useState } from "react";
 import Typed from "typed.js";
+import navimg from "../../assets/img/about.jpg";
 
 const Navbar = () => {
   const el = React.useRef(null);
@@ -44,43 +45,40 @@ const Navbar = () => {
   return (
     <div>
       <div className={`nav-bar ${isactiva ? "active" : ""}`}>
+        <div className="nav-bar-img">
+          <img src={navimg} alt="" />
+        </div>
+        <h3>Ja'farxon</h3>
         <ul>
-          <div className="nav-hover" onClick={handleClick}>
-            <a onClick={a} style={{ cursor: "pointer" }}>
-              {" "}
-              Home
+          <div className="nav-hover" onClick={a}>
+            <a href="#" onClick={a} style={{ cursor: "pointer" }}>
+            <i class="fa-solid fa-house" style={{paddingRight:"15px"}}></i>   Home
             </a>
-            <div className="activ"></div>
           </div>
-          <div className="nav-hover">
+          <div className="nav-hover" onClick={a}>
             <a onClick={a} href="#about">
-              About
+            <i class="fa-solid fa-user" style={{paddingRight:"22px"}}></i>  About
             </a>
-            <div className="activ"></div>
           </div>
-          <div className="nav-hover">
+          <div className="nav-hover" onClick={a}>
             <a onClick={a} href="#skills">
-              Skills{" "}
+            <i class="fas fa-file-code" style={{paddingRight:"22px"}}></i>  Skills
             </a>
-            <div className="activ1"></div>
           </div>
-          <div className="nav-hover">
+          <div className="nav-hover" onClick={a}>
             <a onClick={a} href="#services">
-              Services
+            <i class="fa-solid fa-list" style={{paddingRight:"17px"}}></i>  Services
             </a>
-            <div className="activ2"></div>
           </div>
-          <div className="nav-hover">
+          <div className="nav-hover" onClick={a}>
             <a onClick={a} href="#work">
-              Work{" "}
+            <i class="fa-solid fa-tag" style={{paddingRight:"20px"}}></i>  Work
             </a>
-            <div className="activ1"></div>
           </div>
-          <div className="nav-hover">
+          <div className="nav-hover" onClick={a}>
             <a onClick={a} href="#contact">
-              Contact
+            <i class="fa-solid fa-envelope" style={{paddingRight:"20px"}}></i> Contact
             </a>
-            <div className="activ2"></div>
           </div>
         </ul>
       </div>

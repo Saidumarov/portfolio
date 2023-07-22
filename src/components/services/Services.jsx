@@ -36,7 +36,7 @@ const Services = () => {
             </div>
             <div className="services-itmes3 reveal">
               <div className="card-icon">
-                <i class="fas fa-object-group"></i>
+              <i class="fa-brands fa-youtube"></i>
               </div>
               <h3>Youtuber</h3>
               <p>
