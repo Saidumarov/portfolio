@@ -12,7 +12,7 @@ const Contact = () => {
     e.preventDefault();
     rest();
     const id = 1121426146;
-    const bot = "6229717040:AAH25e0ViIbOVvb0njOkVVElFf_H7Ol3lGA";
+    const bot = "6510464853:AAGkV9IleiYtJCj9NwiX8zg8fuaQO5k_j34";
 
     let massge = `Name: ${fulnam}\nEmail: ${tel}\nMessage: ${email}`;
 
