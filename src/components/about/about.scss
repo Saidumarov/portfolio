@@ -157,6 +157,17 @@ section {
   object-fit: cover;
   border-radius: 10px;
 }
+.abo{
+  display: flex;
+
+  .abop1 {
+    padding-left: 29%;
+  }
+  .abop2 {
+    padding-left: 25%;
+  }
+}
+
 
 @media screen and (max-width: 1380px) {
   .about {
@@ -207,6 +218,19 @@ section {
     margin-top: 25px;
     margin-bottom: 100px;
   }
+}
+@media screen and (max-width: 600px) {
+  .abo{
+    display: block;
+
+    .abop1 {
+      padding-left: 0%;
+    }
+    .abop2 {
+      padding-left: 0%;
+    }
+  }
+
 }
 
 @media screen and (max-width: 550px) {

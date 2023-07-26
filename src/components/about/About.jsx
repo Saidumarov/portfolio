@@ -31,21 +31,31 @@ function About() {
               <img src={about} alt="" className="about-img" />
             </div>
             <div className="about-con-itme2 reveal">
-              <h2>Hey there!  <div></div> <br />
-               I'm Ja'farxon Saidumarov</h2>
+              <h2>
+                Hey there! <div></div> <br />
+                I'm Ja'farxon Saidumarov
+              </h2>
               <p>
-                Officiis, eos pariatur esse velit veritatis reiciendis cum quod
-                possimus quas? Modi adipisci odit voluptatem tempora error
-                perferendis quisquam, dolores iure, ullam id nam quaerat dolor
-                incidunt, ratione aliquam deserunt eaque explicabo nostrum quo
-                veniam expedita distinctio dolorem. Aspernatur consectetur eum.
+                Assalomu alaykum, men Saidumarov Ja'farxon, men veb-sayt
+                yaratuvchiman, shu sohada endi tajriba oshiryapman, hozirda
+                Junior Front-End dasturchiman kelajakda Back-Endni ham o'rganib
+                Full Stack dasturchi bo'lmoqchiman.
                 <br /> <br />
-                Lorem ipsum dolor sit amet consectetur adipisicing
-                elit. Cumque corporis ullam deserunt debitis. Rerum
-                necessitatibus accusantium, ipsa, officiis, eos pariatur esse
-                velit veritatis reiciendis cum quod possimus quas? Modi adipisci
-                odit voluptatem tempora error perferendis quisquam, dolores
-                iure, ullam id nam
+                Hozirda men 17 yoshdaman oilada 2 farzandman . IT sohasiga
+                2022-yilda kirib kelganman va Ishtixon IT Akademyda 7-oy ichida
+                Front-End sohasini real loyihalar asosida o'rgandim.
+                <div className="abo"
+                 
+                >
+           
+                  <p><span style={{color:'#05364D'}}>Tug'ilgan kun: </span>2006-yil, 25 aprel</p>
+                  <p className="abop1"> <span style={{color:'#05364D'}}>Yosh:</span> 17</p>
+                </div>
+                <div   className="abo">
+                
+               <p ><span style={{color:'#05364D'}}>Kanal:</span> https://t.me/jafarxon_blog</p>
+               <p className="abop2"> <span style={{color:'#05364D'}}> Daraja:</span> Junior</p>
+                </div>
               </p>
               <button>SEE MORE</button>
             </div>
@@ -55,7 +65,9 @@ function About() {
       <div
         className={`button ${isActive ? "active" : ""}`}
         onClick={handleClick}
-      ><i class="fas fa-angle-up"></i></div>
+      >
+        <i class="fas fa-angle-up"></i>
+      </div>
     </div>
   );
 }

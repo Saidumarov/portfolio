@@ -1,23 +1,39 @@
 import React, { useState } from "react";
 import Work from "./Work";
 
-import img1 from "../../assets/img/ruy.png";
+import img1 from "../../assets/img/tt.png";
 import img2 from "../../assets/img/uzum.png";
 import img3 from "../../assets/img/logoo.png";
 import img4 from "../../assets/img/tasb.png";
 import img5 from "../../assets/img/1zum.png";
 import img6 from "../../assets/img/ad1.png";
+import img7 from "../../assets/img/calculator.png";
+import img8 from "../../assets/img/poke.png";
+import img9 from "../../assets/img/fut.png";
+import img10 from "../../assets/img/git.png";
+import img11 from "../../assets/img/ruy.png";
+
+
+
+
+
+
 
 const Workdata = () => {
   const data = [
-    { id: 1, img: img1 },
-    { id: 2, img: img2 },
-    { id: 3, img: img3 },
-    { id: 4, img: img4 },
-    { id: 5, img: img5 },
-    { id: 6, img: img6 },
-    { id: 7, img: img5 },
-    { id: 8, img: img6 },
+    { id: 1, img: img1  ,link:'https://todo-list-uzz.netlify.app' , a:`Todo-List.uz`},
+    { id: 2, img: img2 ,  link:`https://uzum-uz.netlify.app` , a:`Uzum-Market.uz`},
+    { id: 3, img: img3 , link:`https://logo-uz.netlify.app` , a:`Logo.uz`},
+    { id: 4, img: img7 , link:`https://Calculator-uzz.netlify.app` , a:`Calculator.uz` },
+    { id: 5, img: img5 , link:`https://1zumda.netlify.app` , a:`1Zumda.uz`},
+    { id: 6, img: img6 , link:`https://adds-uz.netlify.app` , a:`Adds.uz`},
+    { id: 7, img: img4 , link:`https://tasbehh-uz.netlify.app` , a:`Tasbeh.uz` },
+    { id: 8, img: img8  ,link:`https://pokemonn-uz.netlify.app` , a:`Pokemon.uz`},
+    { id: 9, img: img9  ,link:`https://futbol-uz.netlify.app` , a:`Futbol.uz`},
+    { id: 10, img: img10  ,link:`https://git-uz.netlify.app` , a:`Githup-Search.uz`},
+    { id: 11, img: img11  ,link:`https://students-listuz.netlify.app` , a:`Talabalar-Ruyhati.uz`},
+
+
   ];
 
   const [visibleItems, setVisibleItems] = useState(6);
@@ -37,7 +53,7 @@ const Workdata = () => {
           <div className="work-me reveal">My Work</div>
           <div id="ww">
             {data.slice(0, visibleItems).map((item) => (
-              <Work key={item.id} img={item.img} />
+              <Work key={item.id} {...item} />
             ))}
           </div>
 

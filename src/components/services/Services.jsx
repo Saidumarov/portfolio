@@ -7,11 +7,8 @@ const Services = () => {
       <div className="services">
         <div className="services-me reveal">My Services</div>
         <div className="services-itme reveal ">
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde
-            molestias accusamus modi molestiae praesentium ipsam doloribus
-            repudiandae, reiciendis nesciunt consectetur distinctio dignissimos,
-            vel suscipit ipsum consequatur adipisci sed sint provident?
+          <p style={{ textAlign: "center" }}>
+            Mening xizmatlarim Web Design, Web Developer ,Youtuber
           </p>
           <div className="services-itmes">
             <div className="services-itmes1 reveal ">
@@ -20,8 +17,8 @@ const Services = () => {
               </div>
               <h3>Web Design</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Men Front-End buyicha web-dizayin ham yarata olamn bunda men
+                asosan Figma.com sayitidan foydalanamn.
               </p>
             </div>
             <div className="services-itmes2 reveal">
@@ -30,19 +27,16 @@ const Services = () => {
               </div>
               <h3>Web Developer</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Mening asosiy soham bu Front-End va bunda men mahalliy kodlash
+                bilan veb-saytlarni yarata olaman.
               </p>
             </div>
             <div className="services-itmes3 reveal">
               <div className="card-icon">
-              <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-youtube"></i>
               </div>
               <h3>Youtuber</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
+              <p>Men Youtubeda kanalimda o'zimning qiziqishlarim buyicha dasturlashga oid vedio-roliklar joylab boraman. </p>
             </div>
           </div>
         </div>
