@@ -21,7 +21,8 @@ import img11 from "../../assets/img/ruy.png";
 
 const Workdata = () => {
   const data = [
-    { id: 1, img: img1  ,link:'https://todo-list-uzz.netlify.app' , a:`Todo-List.uz`},
+    { id: 1, 
+      img: img1  ,link:'https://todo-list-uzz.netlify.app' , a:`Todo-List.uz`},
     { id: 2, img: img2 ,  link:`https://uzum-uz.netlify.app` , a:`Uzum-Market.uz`},
     { id: 3, img: img3 , link:`https://logo-uz.netlify.app` , a:`Logo.uz`},
     { id: 4, img: img7 , link:`https://Calculator-uzz.netlify.app` , a:`Calculator.uz` },
