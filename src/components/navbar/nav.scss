@@ -20,6 +20,7 @@ body {
 }
 header {
   width: 100%;
+
 }
 .homimg {
   width: 50%;
@@ -30,6 +31,7 @@ header {
   position: relative;
   animation-name: animatinX;
   animation-duration: 1s;
+  margin-bottom: 50px;
 }
 
 .hom {
@@ -62,17 +64,13 @@ header {
   width: 500px;
   height: 500px;
   background-color: #ffc815;
-  border-top-left-radius: 440px;
-  border-top-right-radius: 190px;
-  border-bottom-left-radius: 190px;
-  border-bottom-right-radius: 440px;
   transform: rotate(13deg);
-  margin-top: 110px;
+  margin-top: 100px;
   margin-left: 90px;
   box-shadow: 0px 3px 18px 0px #ffc815;
   position: absolute;
   z-index: -1;
-  border-radius:70% 30% 59% 41% / 56% 33% 67% 44%  ;
+  border-radius: 70% 30% 59% 41% / 56% 33% 67% 44%;
 }
 nav {
   width: 100%;
@@ -81,6 +79,7 @@ nav {
   display: flex;
   align-items: center;
   box-shadow: 0px 3px 16px 0px rgb(0 0 0 / 10%);
+
   .nav {
     width: 100%;
     height: 70px;
@@ -89,7 +88,6 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.4s ease;
     position: relative;
     z-index: 99;
     overflow: hidden;
@@ -140,6 +138,16 @@ nav {
     }
   }
 
+  .nav::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: .5px;
+    background: #ffc815bd;
+    opacity: .15;
+  }
+
   .nav.sticky {
     background-color: #000000ef;
     position: fixed;
@@ -153,7 +161,15 @@ nav {
         padding: 5px 0 0 10px;
       }
     }
+
   }
+
+  .nav.sticky::before {
+    height: 0px;
+
+  }
+
+
   a {
     padding-left: 20px;
     text-decoration: none;
@@ -520,6 +536,7 @@ nav {
 }
 @media screen and (max-width: 610px) {
   .hom {
+    margin-bottom: -100px;
     img {
       width: 550px;
       height: 500px;
@@ -545,28 +562,25 @@ nav {
       font-size: 38px;
       padding-top: 10px;
     }
+
   }
 }
 
 @media screen and (max-width: 505px) {
   .nav-itme {
-
-h1{
-  font-size: 28px;
-}
+    h1 {
+      font-size: 28px;
+    }
 
     .ss {
       font-size: 20px;
       font-weight: 4000;
-   
     }
   }
 }
 
 @media screen and (max-width: 500px) {
   .nav-itme {
-
-
     button {
       width: 140px;
       height: 43px;
@@ -583,13 +597,14 @@ h1{
     .ss {
       font-size: 20px;
       font-weight: 4000;
-  
     }
-    .hel{
+    .hel {
       font-size: 25px;
     }
   }
   .hom {
+    margin-bottom: -150px;
+
     img {
       width: 480px;
       height: 450px;
@@ -614,16 +629,14 @@ h1{
   }
 }
 
-
 @media screen and (max-width: 380px) {
   .nav-itme {
-h1{
-  font-size: 27px;
-}
-
+    h1 {
+      font-size: 27px;
+    }
   }
   .hom {
-    margin-bottom: -100px;
+    margin-bottom: -150px;
     img {
       width: 480px;
       height: 450px;
@@ -631,8 +644,9 @@ h1{
     .hom-itme {
       width: 300px;
       height: 299px;
-      margin-left: 20px;
+      margin-left: 10px;
       transform: rotate(15deg);
+      margin-top: 100px;
     }
 
     .blur {

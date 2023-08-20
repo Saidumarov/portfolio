@@ -14,32 +14,10 @@
   font-weight: 700;
   letter-spacing: 1px;
 
-  .abs{
+  .abs {
     padding-left: 15px;
   }
 }
-// .skills-me::before {
-//   content: "";
-//   position: absolute;
-//   margin-top: 56px;
-//   left: 50%;
-//   width: 140px;
-//   height: 4px;
-//   background: #ffc815bd;
-//   transform: translateX(-50%);
-// }
-
-// .skills-me::after {
-//   content: "";
-//   position: absolute;
-//   margin-top: 51px;
-//   left: 50%;
-//   width: 15px;
-//   height: 15px;
-//   border-radius: 50%;
-//   background: #ffc815bd;
-//   transform: translateX(-50%);
-// }
 .skills-itme {
   .skills-itmes {
     p {
@@ -57,9 +35,6 @@
 }
 
 .skills-itmes {
-  width: 45%;
-  height: 450px;
-
   h2 {
     font-family: "Poppins", sans-serif;
     color: white;
@@ -108,129 +83,166 @@
   }
 }
 .skills-itmes1 {
-  width: 47%;
+  width: 100%;
   height: 450px;
-  // background-color: #230a5c;
-}
-
-.html {
-  width: 100%;
-  .html-name {
-    display: flex;
-    justify-content: space-between;
-    h3 {
-      font-family: "Poppins", sans-serif;
-      color: white;
-      font-weight: 500;
-    }
-  }
-  .html-itme {
-    width: 200px;
-    height: 200px;
-    border: 10px solid #2C2C2C;
-    // background-color: #cccccc;
-    border-radius: 50%;
-    // border-top: 10px solid rgb(180, 162, 162);
-    // border-bottom: 10px solid red;
-    // border-left: 10px solid;
-    // border-right: 10px solid red;
-    // border-width: 0px;
-    animation-name: html;
-    animation-duration: 6s;
-    transition: all 5s ease;
-  }
-  .html-inle {
-    width: 0%;
-    height: 100%;
-    // background-color: #e45126;
-    animation-name: html;
-    animation-duration: 6s;
-    transition: all 5s ease;
-  }
-}
-
-
-// css kompinata
-
-.css1 {
-  margin-top: 35px;
-}
-.sass {
-  margin-top: 35px;
-}
-.css {
-  width: 100%;
-  height: 17px;
-  background-color: #cccccc;
-  border-radius: 3px;
-}
-
-.css-inle {
-  width: 0%;
-  height: 100%;
-  background-color: #0e81ce;
-  transition: all 4.7s ease;
-}
-.html-name {
   display: flex;
   justify-content: space-between;
-  h3 {
-    font-family: "Poppins", sans-serif;
+}
+
+.tex {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 40px;
+  padding-left: 20px;
+}
+
+.skil {
+  width: 160px;
+  height: 160px;
+  position: relative;
+  transform: rotate(-90deg);
+}
+
+.oute {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 1px solid #2c2c2c;
+  // padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  box-shadow: 0 5px 25px #ffffff34;
+}
+
+.innner {
+  width: 138px;
+  height: 138px;
+  border-radius: 50%;
+  border: 1px solid #2c2c2c;
+
+  p {
+    position: absolute;
     color: white;
-    font-weight: 500;
+    z-index: 5;
+    margin: 45px 0 0 30px;
+    transform: rotate(90deg);
+    font-size: 40px;
   }
 }
+
+.circle {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 12px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+}
+
+.circle.active {
+  animation: anim 4.6s linear forwards;
+}
+
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 160px;
+  height: 160px;
+}
+
+@keyframes anim {
+  100% {
+    stroke-dashoffset: 85;
+  }
+}
+
+// css kompinata
+.circle1 {
+  fill: none;
+  stroke: url(#GradientColor1);
+  stroke-width: 12px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+}
+
+.circle1.active {
+  animation: anim1 4s linear forwards;
+}
+
+@keyframes anim1 {
+  100% {
+    stroke-dashoffset: 100;
+  }
+}
+
+//
 
 // sass
 
-.scss {
-  width: 100%;
-  height: 17px;
-  background-color: #cccccc;
-  border-radius: 3px;
+.circle3 {
+  fill: none;
+  stroke: url(#GradientColor2);
+  stroke-width: 12px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
 }
-.sass-inle {
-  width: 0%;
-  height: 100%;
-  background-color: #cf649a;
-  transition: all 4.6s ease;
+
+.circle3.active {
+  animation: anim3 3.9s linear forwards;
+}
+
+@keyframes anim3 {
+  100% {
+    stroke-dashoffset: 115;
+  }
 }
 
 // js
 .js {
-  margin-top: 35px;
+  .tex {
+    padding-left: 0;
+    margin-left: -25px;
+  }
 }
 
-.js1 {
-  width: 100%;
-  height: 17px;
-  background-color: #cccccc;
-  border-radius: 3px;
+.circle4 {
+  fill: none;
+  stroke: url(#GradientColor3);
+  stroke-width: 12px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
 }
-.js-inle {
-  width: 0%;
-  height: 100%;
-  background-color: #e3a324;
-  transition: all 4.4s ease;
+
+.circle4.active {
+  animation: anim4 3.8s linear forwards;
+}
+
+@keyframes anim4 {
+  100% {
+    stroke-dashoffset: 131;
+  }
 }
 
 // react
 
-.react1 {
-  margin-top: 35px;
+.circle5 {
+  fill: none;
+  stroke: url(#GradientColor4);
+  stroke-width: 12px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
 }
 
-.react {
-  width: 100%;
-  height: 17px;
-  background-color: #cccccc;
-  border-radius: 3px;
+.circle5.active {
+  animation: anim5 3.8s linear forwards;
 }
-.react-inle {
-  width: 0%;
-  height: 100%;
-  background-color: #007ea8;
-  transition: all 4.4s ease;
+
+@keyframes anim5 {
+  100% {
+    stroke-dashoffset: 131;
+  }
 }
 
 @media screen and (max-width: 1380px) {
@@ -249,6 +261,9 @@
 }
 
 @media screen and (max-width: 1000px) {
+  .skills{
+   height: 1000px;
+  }
   .skills-itmes {
     width: 100%;
     height: auto;
@@ -257,6 +272,9 @@
     width: 100%;
     height: 450px;
     margin-top: 50px;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: auto auto auto;
   }
   .skills-itme {
     flex-wrap: wrap;
@@ -265,7 +283,60 @@
   .skills {
     height: auto;
   }
+
+  .js {
+    margin-top: 50px;
+  }
+  .react1 {
+    margin-top: 50px;
+  }
 }
+@media screen and (max-width: 650px) {
+  .skills-itmes1 {
+    margin-top: 50px;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: auto auto;
+  }
+  .sass {
+    margin-top: 50px;
+  }
+}
+
+
+// @media screen and (max-width: 500px) {
+
+//   svg{
+//     width: 140px;
+//     height: 140px;
+//   }
+//   .oute{
+//     width: 140px;
+//     height: 140px;
+//   }
+//   .skil{
+//     width: 140px;
+//     height: 140px;
+//   }
+//   .innner{
+//     width: 110px;
+//     height: 110px;
+//   }
+//   .tex{
+//     font-size: 35px
+//   }
+
+//   .circle1 {
+//     fill: none;
+//     stroke: url(#GradientColor1);
+//     stroke-width: 8px;
+//     stroke-dasharray: 472;
+//     stroke-dashoffset: 472;
+//     width: 120px;
+//     font-size: 20px;
+//   }
+
+// }
 
 @media screen and (max-width: 480px) {
   .skills-itmes1 {
@@ -287,5 +358,3 @@
     width: 100%;
   }
 }
-
-

@@ -71,7 +71,7 @@ function About() {
                   </p>
                 </div>
               </p>
-              <button>SEE MORE</button>
+              <button className="semo">SEE MORE</button>
             </div>
           </div>
         </div>

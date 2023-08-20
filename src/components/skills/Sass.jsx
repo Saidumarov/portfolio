@@ -37,12 +37,29 @@ const Sass = () => {
   }, [currentNumber, countdownStarted]);
   return (
     <div>
-      <div className="html-name">
-        <h3>Sass</h3> <h3>{currentNumber}%</h3>
+     <div class="skil">
+        <div class="oute">
+          <div class="innner">
+            <p>{currentNumber}%</p>
+          </div>
+        </div>
+        <svg xmIns="http: //www.w.org/2000/svg" version="1.1">
+          <defs>
+            <linearGradient id="GradientColor2">
+              <stop offset="0%" stop-color="#CF649A" />
+            </linearGradient>
+          </defs>
+          <circle
+            cx="79.9"
+            cy="80"
+            r="72"
+            stroke-linecap="round"
+            className={`circle3 ${wiz ? "active" : ""}`}
+          />
+        </svg>
       </div>
-      <div className="scss">
-        <div className="sass-inle" style={{ width: `${wiz}%` }}></div>
-      </div>
+        <p className="tex">Sass</p> 
+
     </div>
   );
 };

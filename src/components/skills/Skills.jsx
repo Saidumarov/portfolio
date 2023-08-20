@@ -7,13 +7,13 @@ import React1 from "./React";
 const Skills = () => {
   const [currentNumber, setCurrentNumber] = useState();
   const [countdownStarted, setCountdownStarted] = useState(false);
-  const [wiz, setWiz] = useState();
+  const [wiz, setWiz] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       if (!countdownStarted && window.scrollY > 1000) {
         setCountdownStarted(true);
-        setWiz(90);
+        setWiz(true);
         setCurrentNumber(1);
       }
     };
@@ -43,7 +43,11 @@ const Skills = () => {
   return (
     <div id="skills">
       <div className="skills">
-        <div className="skills-me reveal"> <span className="opasity">My Skills</span> <span className="abs">My Skills</span></div>
+        <div className="skills-me reveal">
+       
+          <span className="opasity">My Skills</span>
+          <span className="abs">My Skills</span>
+        </div>
         <div className="skills-itme">
           {/* <div className="skills-itmes reveal">
             <h2>
@@ -61,12 +65,25 @@ const Skills = () => {
           </div> */}
           <div className="skills-itmes1 reveal">
             <div className="html">
-              <div className="html-name">
-                <h3>Html</h3> <h3>{currentNumber}%</h3>
+           
+              <div class="skil">
+                <div class="oute">
+                  <div class="innner"><p>{currentNumber}%</p></div>
+                </div>
+                <svg
+                  xmIns="http: //www.w.org/2000/svg"
+                  version="1.1"
+           
+                >
+                  <defs>
+                    <linearGradient id="GradientColor">
+                      <stop offset="0%" stop-color="#E45126" />
+                    </linearGradient>
+                  </defs>
+                  <circle cx="79.9" cy="80" r="72" stroke-linecap="round" className={`circle ${wiz ? "active" : ""}`} />
+                </svg>
               </div>
-              <div className="html-itme">
-                <div className="html-inle" style={{ width: `${wiz}%` }}></div>
-              </div>
+                <p className="tex">Html</p>
             </div>
             <div className="css1">
               <Css />

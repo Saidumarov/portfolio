@@ -85,7 +85,7 @@ const Navbar = () => {
               <i
                 class="fa-solid fa-envelope"
                 style={{ paddingRight: "20px" }}
-              ></i>{" "}
+              ></i>
               Contact
             </a>
           </div>
@@ -94,6 +94,7 @@ const Navbar = () => {
       <header>
         <nav>
           <div className="nav">
+
             <div className="nav1">
               <h1>JA'FARXON</h1>
               <ul>
@@ -128,6 +129,7 @@ const Navbar = () => {
                 <div className="barr" style={{ transition: ".4s" }}></div>
               </div>
             </div>
+            {/* <div className="bot"></div> */}
           </div>
         </nav>
         <div className="hom">
