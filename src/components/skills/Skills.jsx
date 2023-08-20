@@ -43,9 +43,9 @@ const Skills = () => {
   return (
     <div id="skills">
       <div className="skills">
-        <div className="skills-me reveal">My Skills</div>
+        <div className="skills-me reveal"> <span className="opasity">My Skills</span> <span className="abs">My Skills</span></div>
         <div className="skills-itme">
-          <div className="skills-itmes reveal">
+          {/* <div className="skills-itmes reveal">
             <h2>
               My Skills and Experiences <div></div>
             </h2>
@@ -58,7 +58,7 @@ const Skills = () => {
            
             </p>
             <button>SEE MORE</button>
-          </div>
+          </div> */}
           <div className="skills-itmes1 reveal">
             <div className="html">
               <div className="html-name">

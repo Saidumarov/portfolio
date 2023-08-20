@@ -25,14 +25,17 @@ function About() {
     <div id="about">
       <section>
         <div className="about">
-          <div className="about-me reveal">About Me</div>
+          <div className="about-me reveal">
+      
+            <span className="opasity">About Me</span> <span className="ab">About Me</span>
+          </div>
           <div className="about-contenr">
             <div className="about-con-itme1 reveal">
               <img src={about} alt="" className="about-img" />
             </div>
             <div className="about-con-itme2 reveal">
               <h2>
-                Hey there! <div></div> <br />
+                <span className="hey"> Hey there!</span> <div></div> <br />
                 I'm Ja'farxon Saidumarov
               </h2>
               <p>
@@ -44,17 +47,28 @@ function About() {
                 Hozirda men 17 yoshdaman oilada 2 farzandman . IT sohasiga
                 2022-yilda kirib kelganman va Ishtixon IT Akademyda 7-oy ichida
                 Front-End sohasini real loyihalar asosida o'rgandim.
-                <div className="abo"
-                 
-                >
-           
-                  <p><span style={{color:'#05364D'}}>Tug'ilgan kun: </span>2006-yil, 25 aprel</p>
-                  <p className="abop1"> <span style={{color:'#05364D'}}>Yosh:</span> 17</p>
+                <div className="abo">
+                  <p>
+                    <span style={{ color: "#ffda60" }}>Tug'ilgan kun: </span>
+                    2006-yil, 25 aprel
+                  </p>
+                  <p className="abop1">
+                    <span style={{ color: "#ffda60" }}>Yosh:</span> 17
+                  </p>
                 </div>
-                <div   className="abo">
-                
-               <p ><span style={{color:'#05364D'}}>Kanal:</span> https://t.me/jafarxon_blog</p>
-               <p className="abop2"> <span style={{color:'#05364D'}}> Daraja:</span> Junior</p>
+                <div className="abo">
+                  <p>
+                    <span style={{ color: "#ffda60" }}>Kanal:</span>
+                    <a
+                      href="https://t.me/jafarxon_blog" style={{textDecoration:"none", color:"white"}}
+                    >
+              
+                      https://t.me/jafarxon_blog
+                    </a>
+                  </p>
+                  <p className="abop2">
+                    <span style={{ color: "#ffda60" }}> Daraja:</span> Junior
+                  </p>
                 </div>
               </p>
               <button>SEE MORE</button>

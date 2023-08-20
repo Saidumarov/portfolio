@@ -2,16 +2,16 @@ import "./nav.scss";
 import React, { useEffect, useState } from "react";
 import Typed from "typed.js";
 import navimg from "../../assets/img/about.jpg";
+import hom from "../../assets/img/hom.png";
+
+import me from "../../assets/img/me1.jpg";
 
 const Navbar = () => {
   const el = React.useRef(null);
 
   React.useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: [
-        "Junior Front-End Developer.",
-        " My goal become Full Stack developer.",
-      ],
+      strings: ["Junior Front-End Developer.", " You Tuber."],
       typeSpeed: 50,
       startDelay: 500,
       backDelay: 1500,
@@ -48,36 +48,45 @@ const Navbar = () => {
         <div className="nav-bar-img">
           <img src={navimg} alt="" />
         </div>
-        <h3>Ja'farxon</h3>
+        <h3>JA'farxon</h3>
         <ul>
           <div className="nav-hover" onClick={a}>
             <a href="#" onClick={a} style={{ cursor: "pointer" }}>
-            <i class="fa-solid fa-house" style={{paddingRight:"15px"}}></i>   Home
+              <i class="fa-solid fa-house" style={{ paddingRight: "15px" }}></i>{" "}
+              Home
             </a>
           </div>
           <div className="nav-hover" onClick={a}>
             <a onClick={a} href="#about">
-            <i class="fa-solid fa-user" style={{paddingRight:"22px"}}></i>  About
+              <i class="fa-solid fa-user" style={{ paddingRight: "22px" }}></i>{" "}
+              About
             </a>
           </div>
           <div className="nav-hover" onClick={a}>
             <a onClick={a} href="#skills">
-            <i class="fas fa-file-code" style={{paddingRight:"22px"}}></i>  Skills
+              <i class="fas fa-file-code" style={{ paddingRight: "22px" }}></i>{" "}
+              Skills
             </a>
           </div>
           <div className="nav-hover" onClick={a}>
             <a onClick={a} href="#services">
-            <i class="fa-solid fa-list" style={{paddingRight:"17px"}}></i>  Services
+              <i class="fa-solid fa-list" style={{ paddingRight: "17px" }}></i>{" "}
+              Services
             </a>
           </div>
           <div className="nav-hover" onClick={a}>
             <a onClick={a} href="#work">
-            <i class="fa-solid fa-tag" style={{paddingRight:"20px"}}></i>  Work
+              <i class="fa-solid fa-tag" style={{ paddingRight: "20px" }}></i>{" "}
+              Work
             </a>
           </div>
           <div className="nav-hover" onClick={a}>
             <a onClick={a} href="#contact">
-            <i class="fa-solid fa-envelope" style={{paddingRight:"20px"}}></i> Contact
+              <i
+                class="fa-solid fa-envelope"
+                style={{ paddingRight: "20px" }}
+              ></i>{" "}
+              Contact
             </a>
           </div>
         </ul>
@@ -86,7 +95,7 @@ const Navbar = () => {
         <nav>
           <div className="nav">
             <div className="nav1">
-              <h1>Ja'farxon</h1>
+              <h1>JA'FARXON</h1>
               <ul>
                 <div className="nav-hover" onClick={handleClick}>
                   <a style={{ cursor: "pointer" }}> Home</a>
@@ -121,15 +130,32 @@ const Navbar = () => {
             </div>
           </div>
         </nav>
-        <div className="nav-itme ">
-          <h2>Hello, I'm</h2>
-          <h1>Saidumarov Ja'farxon </h1>
-          <i>
-            <span ref={el} className="ss" />
-          </i>
-          <button>SEE MY WORK</button>
+        <div className="hom">
+          <div className="nav-itme ">
+            <h2>
+              <span className="hel">Hello,</span> I'm
+            </h2>
+            <h1>Saidumarov Ja'farxon </h1>
+
+            <i>
+              <span ref={el} className="ss" />
+            </i>
+            <button>SEE MY WORK</button>
+          </div>
+          <div className="homimg">
+            <div className="hom-itme"></div>
+            <img src={hom} alt="" />
+            <div className="blur"></div>
+          </div>
+
+          {/* <div className="homimg reveal">
+            <div className="hom-itme"></div>
+            <img src={hom} alt="" />
+            <div className="blur"></div>
+          </div> */}
         </div>
       </header>
+      {/* <img src={me} alt="" /> */}
     </div>
   );
 };
