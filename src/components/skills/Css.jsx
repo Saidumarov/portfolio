@@ -4,6 +4,37 @@ const Css = () => {
   const [currentNumber, setCurrentNumber] = useState();
   const [countdownStarted, setCountdownStarted] = useState(false);
   const [wiz, setWiz] = useState();
+  const [screenWidth, setScreenWidth] = useState(
+    window.innerWidth || document.documentElement.clientWidth
+  );
+
+  const [cx, setCx] = useState(79.9);
+  const [cy, setCy] = useState(80);
+  const [cxy, setCxy] = useState(72);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setScreenWidth(window.innerWidth || document.documentElement.clientWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [countdownStarted]);
+
+  useEffect(() => {
+    if (screenWidth <= 440) {
+      setCx(65);
+      setCy(65);
+      setCxy(50);
+    } else {
+      setCx(79.9);
+      setCy(80);
+      setCxy(72);
+    }
+  }, [screenWidth]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -50,9 +81,23 @@ const Css = () => {
             </linearGradient>
           </defs>
           <circle
-            cx="79.9"
-            cy="80"
-            r="72"
+            cx={cx}
+            cy={cy}
+            r={cxy}
+            stroke-linecap="round"
+            className="cir"
+          />
+        </svg>
+        <svg xmIns="http: //www.w.org/2000/svg" version="1.1">
+          <defs>
+            <linearGradient id="GradientColor1">
+              <stop offset="0%" stop-color="#0E81CE" />
+            </linearGradient>
+          </defs>
+          <circle
+            cx={cx}
+            cy={cy}
+            r={cxy}
             stroke-linecap="round"
             className={`circle1 ${wiz ? "active" : ""}`}
           />

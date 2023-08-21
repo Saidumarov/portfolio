@@ -4,10 +4,18 @@ import Css from "./Css";
 import Sass from "./Sass";
 import Js from "./Js";
 import React1 from "./React";
+
 const Skills = () => {
-  const [currentNumber, setCurrentNumber] = useState();
+  const [currentNumber, setCurrentNumber] = useState(0);
   const [countdownStarted, setCountdownStarted] = useState(false);
   const [wiz, setWiz] = useState(false);
+  const [screenWidth, setScreenWidth] = useState(
+    window.innerWidth || document.documentElement.clientWidth
+  );
+
+  const [cx, setCx] = useState(79.9);
+  const [cy, setCy] = useState(80);
+  const [cxy, setCxy] = useState(72);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,8 +26,17 @@ const Skills = () => {
       }
     };
 
+    const handleResize = () => {
+      setScreenWidth(window.innerWidth || document.documentElement.clientWidth);
+    };
+
     window.addEventListener("scroll", handleScroll);
-    return () => removeEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleResize);
+    };
   }, [countdownStarted]);
 
   useEffect(() => {
@@ -40,50 +57,66 @@ const Skills = () => {
     }
   }, [currentNumber, countdownStarted]);
 
+  useEffect(() => {
+    if (screenWidth <= 440) {
+      setCx(65);
+      setCy(65);
+      setCxy(50);
+    } else {
+      setCx(79.9);
+      setCy(80);
+      setCxy(72);
+    }
+  }, [screenWidth]);
+
   return (
     <div id="skills">
       <div className="skills">
         <div className="skills-me reveal">
-       
           <span className="opasity">My Skills</span>
           <span className="abs">My Skills</span>
         </div>
         <div className="skills-itme">
-          {/* <div className="skills-itmes reveal">
-            <h2>
-              My Skills and Experiences <div></div>
-            </h2>
-            <p>
-              Front-End dasturchisi, men  Saidumarov Ja'farxo UI/UX foydalanuvchi interfeysi bilan
-              veb-sahifalar yarata olaman , hozirda amolyat qilib tajribamdi oshirmoqdaman. Men jamoviy 
-              ishlash va  Githupda ham 
-              jamoviy ishlashdi tajribasiga egaman.
-
-           
-            </p>
-            <button>SEE MORE</button>
-          </div> */}
           <div className="skills-itmes1 reveal">
             <div className="html">
-           
-              <div class="skil">
-                <div class="oute">
-                  <div class="innner"><p>{currentNumber}%</p></div>
+              <div className="skil">
+                <div className="oute">
+                  <div className="innner">
+                    <p>{currentNumber}%</p>
+                  </div>
                 </div>
-                <svg
-                  xmIns="http: //www.w.org/2000/svg"
-                  version="1.1"
-           
-                >
-                  <defs>
-                    <linearGradient id="GradientColor">
-                      <stop offset="0%" stop-color="#E45126" />
-                    </linearGradient>
-                  </defs>
-                  <circle cx="79.9" cy="80" r="72" stroke-linecap="round" className={`circle ${wiz ? "active" : ""}`} />
-                </svg>
+                <div className="blok">
+                  <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                    <defs>
+                      <linearGradient id="GradientColora">
+                        <stop offset="0%" stopColor="#2c2c2c" />
+                      </linearGradient>
+                    </defs>
+                    <circle
+                      cx={cx}
+                      cy={cy}
+                      r={cxy}
+                      strokeLinecap="round"
+                      className="cir"
+                    />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                    <defs>
+                      <linearGradient id="GradientColor">
+                        <stop offset="0%" stopColor="#E45126" />
+                      </linearGradient>
+                    </defs>
+                    <circle
+                      cx={cx}
+                      cy={cy}
+                      r={cxy}
+                      strokeLinecap="round"
+                      className={`circle ${wiz ? "active" : ""}`}
+                    />
+                  </svg>
+                </div>
               </div>
-                <p className="tex">Html</p>
+              <p className="tex">Html</p>
             </div>
             <div className="css1">
               <Css />

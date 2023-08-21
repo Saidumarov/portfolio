@@ -13,7 +13,7 @@ const Navbar = () => {
     const typed = new Typed(el.current, {
       strings: ["Junior Front-End Developer.", " You Tuber."],
       typeSpeed: 50,
-      startDelay: 500,
+      startDelay: 900,
       backDelay: 1500,
       backSpeed: 80,
       loop: true,
@@ -98,27 +98,27 @@ const Navbar = () => {
             <div className="nav1">
               <h1>JA'FARXON</h1>
               <ul>
-                <div className="nav-hover" onClick={handleClick}>
+                <div className="nav-hover" onClick={handleClick} id="nav1">
                   <a style={{ cursor: "pointer" }}> Home</a>
                   <div className="activ"></div>
                 </div>
-                <div className="nav-hover">
+                <div className="nav-hover" id="nav2"> 
                   <a href="#about">About</a>
                   <div className="activ"></div>
                 </div>
-                <div className="nav-hover">
+                <div className="nav-hover" id="nav3">
                   <a href="#skills">Skills </a>
                   <div className="activ1"></div>
                 </div>
-                <div className="nav-hover">
+                <div className="nav-hover" id="nav4">
                   <a href="#services">Services </a>
                   <div className="activ2"></div>
                 </div>
-                <div className="nav-hover">
+                <div className="nav-hover" id="nav5">
                   <a href="#work">Work </a>
                   <div className="activ1"></div>
                 </div>
-                <div className="nav-hover">
+                <div className="nav-hover" id="nav6">
                   <a href="#contact">Contact</a>
                   <div className="activ2"></div>
                 </div>
@@ -134,27 +134,30 @@ const Navbar = () => {
         </nav>
         <div className="hom">
           <div className="nav-itme ">
-            <h2>
+        <h2>
               <span className="hel">Hello,</span> I'm
             </h2>
             <h1>Saidumarov Ja'farxon </h1>
 
-            <i>
+
+       <span className="animaty1">
+       <i>
               <span ref={el} className="ss" />
             </i>
             <button>SEE MY WORK</button>
+       </span>
           </div>
-          <div className="homimg">
+          <div className="homimg" id="min">
             <div className="hom-itme"></div>
             <img src={hom} alt="" />
             <div className="blur"></div>
           </div>
 
-          {/* <div className="homimg reveal">
+          <div className="homimg reveala" id="mx">
             <div className="hom-itme"></div>
             <img src={hom} alt="" />
             <div className="blur"></div>
-          </div> */}
+          </div>
         </div>
       </header>
       {/* <img src={me} alt="" /> */}

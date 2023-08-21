@@ -134,6 +134,12 @@ section {
   }
 }
 
+.reveala {
+  position: relative;
+  transform: translateX(150px);
+  opacity: 0;
+  transition: all 1.3s ease;
+}
 .reveal {
   position: relative;
   transform: translateY(90px);
@@ -143,6 +149,10 @@ section {
 
 .reveal.active {
   transform: translateY(0);
+  opacity: 1;
+}
+.reveala.active {
+  transform: translateX(0);
   opacity: 1;
 }
 .button {

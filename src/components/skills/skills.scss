@@ -13,6 +13,7 @@
   color: #ffc815bd;
   font-weight: 700;
   letter-spacing: 1px;
+  padding-top: 120px;
 
   .abs {
     padding-left: 15px;
@@ -101,19 +102,22 @@
   height: 160px;
   position: relative;
   transform: rotate(-90deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .oute {
   width: 160px;
   height: 160px;
   border-radius: 50%;
-  border: 1px solid #2c2c2c;
+  // border: 1px solid #2c2c2c;
   // padding: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  box-shadow: 0 5px 25px #ffffff34;
+  // box-shadow: 0 5px 25px -5px #ffffff40;
 }
 
 .innner {
@@ -132,12 +136,19 @@
   }
 }
 
+.cir {
+  fill: none;
+  stroke: url(#GradientColora);
+  stroke-width: 12px;
+}
+
 .circle {
   fill: none;
   stroke: url(#GradientColor);
   stroke-width: 12px;
   stroke-dasharray: 472;
   stroke-dashoffset: 472;
+  z-index: 2;
 }
 
 .circle.active {
@@ -154,7 +165,7 @@ svg {
 
 @keyframes anim {
   100% {
-    stroke-dashoffset: 85;
+    stroke-dashoffset: 150;
   }
 }
 
@@ -261,8 +272,8 @@ svg {
 }
 
 @media screen and (max-width: 1000px) {
-  .skills{
-   height: 1000px;
+  .skills {
+    height: 1000px;
   }
   .skills-itmes {
     width: 100%;
@@ -297,12 +308,18 @@ svg {
     display: grid;
     justify-content: space-between;
     grid-template-columns: auto auto;
+
+    .react1{
+position: absolute;
+bottom: 0;
+margin-bottom: -170px;
+margin-left: 100px;
+    }
   }
   .sass {
     margin-top: 50px;
   }
 }
-
 
 // @media screen and (max-width: 500px) {
 
@@ -353,6 +370,67 @@ svg {
     }
   }
 }
+
+
+@media screen and (max-width: 440px) {
+  .skil {
+    width: 130px;
+    height: 130px;
+  }
+  .innner {
+    width: 90px;
+    height: 90px;
+    p {
+      position: absolute;
+      color: white;
+      z-index: 5;
+      margin: 28px 0 0 17px;
+      transform: rotate(90deg);
+      font-size: 28px;
+    }
+  }
+  .oute {
+    width: 120px;
+    height: 120px;
+  }
+  .circle {
+    width: 120px;
+    height: 120px;
+  }
+
+  .tex {
+    font-size: 24px;
+    padding-left: 40px;
+  }
+
+  @keyframes anim5 {
+    100% {
+      stroke-dashoffset: 131;
+    }
+  }
+  @keyframes anim4 {
+    100% {
+      stroke-dashoffset: 131;
+    }
+  }
+  @keyframes anim3 {
+    100% {
+      stroke-dashoffset: 115;
+    }
+  }
+  @keyframes anim1 {
+    100% {
+      stroke-dashoffset: 100;
+    }
+  }
+  @keyframes anim {
+    100% {
+      stroke-dashoffset: 15;
+    }
+  }    
+
+}
+
 @media screen and (max-width: 400px) {
   .skills-itmes1 {
     width: 100%;

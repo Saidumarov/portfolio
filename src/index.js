@@ -6,7 +6,7 @@ window.addEventListener("DOMContentLoaded", function () {
   });
 
   window.addEventListener("scroll", () => {
-    let reveals = document.querySelectorAll(".reveal");
+    let reveals = document.querySelectorAll(".reveal , .reveala");
 
     for (let i = 0; i < reveals.length; i++) {
       let windowHeight = window.innerHeight;
@@ -18,4 +18,8 @@ window.addEventListener("DOMContentLoaded", function () {
       }
     }
   });
+  
+
 });
+
+
