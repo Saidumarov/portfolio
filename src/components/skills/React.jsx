@@ -104,7 +104,7 @@ const React1 = () => {
         </svg>
       </div>
 
-      <p className="tex">React</p>
+      <p className="tex" id="rr">React</p>
     </div>
   );
 };

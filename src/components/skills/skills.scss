@@ -1,8 +1,7 @@
 .skills {
   width: 100%;
   height: 710px;
-  background-color: #111111;
-  // margin-bottom: 300px;
+  background-color: #000006;
 }
 
 .skills-me {
@@ -165,7 +164,7 @@ svg {
 
 @keyframes anim {
   100% {
-    stroke-dashoffset: 150;
+    stroke-dashoffset: 85;
   }
 }
 
@@ -291,8 +290,6 @@ svg {
     flex-wrap: wrap;
   }
 
-
-
   .js {
     margin-top: 50px;
   }
@@ -304,14 +301,18 @@ svg {
   .skills-itmes1 {
     margin-top: 50px;
     display: grid;
-    justify-content: space-between;
+    justify-content: space-around;
     grid-template-columns: auto auto;
 
-    .react1{
-position: absolute;
-bottom: 0;
-margin-bottom: -170px;
-margin-left: 100px;
+    .react1 {
+      position: absolute;
+      bottom: 0;
+      margin-bottom: -170px;
+      margin-left: 105px;
+
+      #rr{
+      margin-left: -10px;
+      }
     }
   }
   .sass {
@@ -319,39 +320,6 @@ margin-left: 100px;
   }
 }
 
-// @media screen and (max-width: 500px) {
-
-//   svg{
-//     width: 140px;
-//     height: 140px;
-//   }
-//   .oute{
-//     width: 140px;
-//     height: 140px;
-//   }
-//   .skil{
-//     width: 140px;
-//     height: 140px;
-//   }
-//   .innner{
-//     width: 110px;
-//     height: 110px;
-//   }
-//   .tex{
-//     font-size: 35px
-//   }
-
-//   .circle1 {
-//     fill: none;
-//     stroke: url(#GradientColor1);
-//     stroke-width: 8px;
-//     stroke-dasharray: 472;
-//     stroke-dashoffset: 472;
-//     width: 120px;
-//     font-size: 20px;
-//   }
-
-// }
 
 @media screen and (max-width: 480px) {
   .skills-itmes1 {
@@ -368,7 +336,6 @@ margin-left: 100px;
     }
   }
 }
-
 
 @media screen and (max-width: 440px) {
   .skil {
@@ -425,8 +392,7 @@ margin-left: 100px;
     100% {
       stroke-dashoffset: 15;
     }
-  }    
-
+  }
 }
 
 @media screen and (max-width: 400px) {
