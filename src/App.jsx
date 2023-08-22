@@ -7,8 +7,6 @@ import Workdata from "./components/work/Workdata";
 import Contact from "./components/contact/Contact";
 import Services from "./components/services/Services";
 
-
-
 function App() {
   return (
     <div>
@@ -16,8 +14,8 @@ function App() {
       <About />
       <Skills />
       <Services />
-      {/* <Workdata/>
-      <Contact/> */}
+      <Workdata />
+      <Contact />
     </div>
   );
 }

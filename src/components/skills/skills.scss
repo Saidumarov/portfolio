@@ -1,18 +1,18 @@
 .skills {
   width: 100%;
   height: 710px;
-  background-color: #00000a;
+  background-color: #00000a90;
 }
 
 .skills-me {
   text-align: center;
-  padding-top: 110px;
+  padding-top: 140px;
   font-family: "Poppins", sans-serif;
   font-size: 40px;
   color: #ffc815bd;
   font-weight: 700;
   letter-spacing: 1px;
-  padding-top: 120px;
+  // padding-top: 120px;
 
   .abs {
     padding-left: 15px;
@@ -31,7 +31,7 @@
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 .skills-itmes {
@@ -309,10 +309,9 @@ svg {
       bottom: 0px;
       margin-bottom: -300px;
       margin-left: 105px;
-      
 
-      #rr{
-      margin-left: -10px;
+      #rr {
+        margin-left: -10px;
       }
     }
   }
@@ -320,8 +319,10 @@ svg {
     margin-top: 50px;
   }
 
+  .skills {
+    height: 1100px;
+  }
 }
-
 
 @media screen and (max-width: 480px) {
   .skills-itmes1 {
@@ -358,14 +359,11 @@ svg {
   }
 
   .skills-itmes1 {
-
     .react1 {
       position: absolute;
       bottom: 0px;
       margin-bottom: -170px;
       margin-left: 110px;
-      
-
     }
   }
   .oute {
@@ -406,6 +404,10 @@ svg {
     100% {
       stroke-dashoffset: 200;
     }
+  }
+
+  .skills {
+    height: 1000px;
   }
 }
 

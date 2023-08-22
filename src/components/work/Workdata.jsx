@@ -51,7 +51,7 @@ const Workdata = () => {
     <div>
       <div id="work">
         <div className="work">
-          <div className="work-me reveal">My Work</div>
+          <div className="work-me reveal"> <span className="opasity"> My Work</span>  My Work</div>
           <div id="ww">
             {data.slice(0, visibleItems).map((item) => (
               <Work key={item.id} {...item} />

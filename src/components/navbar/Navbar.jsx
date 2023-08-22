@@ -48,7 +48,7 @@ const Navbar = () => {
         <div className="nav-bar-img">
           <img src={navimg} alt="" />
         </div>
-        <h3>JA'farxon</h3>
+        <h3>Ja'farxon</h3>
         <ul>
           <div className="nav-hover" onClick={a}>
             <a href="#" onClick={a} style={{ cursor: "pointer" }}>
@@ -94,7 +94,6 @@ const Navbar = () => {
       <header>
         <nav>
           <div className="nav">
-
             <div className="nav1">
               <h1>JA'FARXON</h1>
               <ul>
@@ -102,7 +101,7 @@ const Navbar = () => {
                   <a style={{ cursor: "pointer" }}> Home</a>
                   <div className="activ"></div>
                 </div>
-                <div className="nav-hover" id="nav2"> 
+                <div className="nav-hover" id="nav2">
                   <a href="#about">About</a>
                   <div className="activ"></div>
                 </div>
@@ -134,18 +133,22 @@ const Navbar = () => {
         </nav>
         <div className="hom">
           <div className="nav-itme ">
-        <h2>
+            <h2>
               <span className="hel">Hello,</span> I'm
             </h2>
             <h1>Saidumarov Ja'farxon </h1>
 
-
-       <span className="animaty1">
-       <i>
-              <span ref={el} className="ss" />
-            </i>
-            <button>SEE MY WORK</button>
-       </span>
+            <span className="animaty1">
+              <i>
+                <span ref={el} className="ss" />
+              </i>
+              <button>SEE MY WORK</button>
+            </span>
+            <div className="ic">
+              <i class="fa-brands fa-youtube"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-telegram"></i>
+            </div>
           </div>
           <div className="homimg" id="min">
             <div className="hom-itme"></div>

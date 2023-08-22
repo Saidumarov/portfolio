@@ -31,16 +31,18 @@ const Contact = () => {
       .then((data) => console.log(data));
   };
 
- const rest = () =>{
-  text.value = ''
-  name.value = ''
-  tell.value = ''
-
- }
+  const rest = () => {
+    text.value = "";
+    name.value = "";
+    tell.value = "";
+  };
   return (
     <div id="contact">
       <div className="contact">
-        <div className="contact-me reveal">Contact Me </div>
+        <div className="contact-me reveal">
+          {" "}
+          <span className="opasity">Contact Me</span> Contact Me{" "}
+        </div>
         <div className="contact-itme">
           <div className="contact-itmes">
             <div className="contact-card reveal">

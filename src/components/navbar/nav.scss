@@ -34,7 +34,6 @@ header {
   margin-bottom: 50px;
 }
 
-
 .hom {
   display: flex;
   width: 1300px;
@@ -48,29 +47,28 @@ header {
     margin-left: -150px;
     margin-top: -10px;
     object-fit: cover;
-    animation: img infinite;
+    // animation: img infinite;
     animation-duration: 5.6s;
-  
   }
   .blur {
-    width: 460px;
-    height: 75px;
-    box-shadow: 0px 3px 18px 0px #0d0d0c;
+    width: 450px;
+    height: 60px;
+    box-shadow: 0px 3px 18px 0px #000000;
     background-image: linear-gradient(
-      to top left,
-      #131416e6,
+      to left bottom,
+      #000000e6,
       rgba(0, 0, 0, 0.792)
     );
-    filter: blur(5px);
+    filter: blur(15px);
     margin-left: 130px;
-    margin-top: -15px;
+    margin-top: -35px;
     position: relative;
     z-index: 3;
   }
 }
 .hom-itme {
-  width: 600px;
-  height: 600px;
+  width: 590px;
+  height: 590px;
   background: linear-gradient(
     to top right,
     #604608 0%,
@@ -78,58 +76,46 @@ header {
     #dcbd77 100%
   );
   transform: rotate(13deg);
-  margin-top: 20px;
-  margin-left: 40px;
+  margin-top: -10px;
+  margin-left: 50px;
   box-shadow: 0px 3px 18px 5px #ffc815;
   position: absolute;
   z-index: -1;
-  border-radius: 51% 49% 48% 52% / 71% 67% 33% 29%;
+  border-radius: 51%;
   filter: blur(15px);
-  animation: hom infinite;
+  // animation: hom infinite;
   animation-duration: 5.6s;
   animation-duration: 5.6s;
-  box-shadow: inset 6px 6px 11px #b08b35,
-              inset -6px -6px 11px #eab947;
-  
+  box-shadow: inset 6px 6px 11px #b08b35, inset -6px -6px 11px #eab947;
+}
+.ic {
+  width: 200px;
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+
+  i {
+    color: white;
+    font-size: 35px;
+    transition: 0.4s;
+    animation: ii 1s linear;
+  }
+}
+i:hover {
+  cursor: pointer;
+  color: #e7b84a;
 }
 
-@keyframes hom {
+@keyframes ii {
   0% {
-    transform: translateX(8px)  translateY(8px);
-  }
-  25% {
-    transform: translateX(-8px)  translateY(-5px);
-  }
-  50% {
-    transform: translateX(15px)  translateY(5px);
-  }
-  75% {
-    transform: translateX(-8px)  translateY(-15px);
+    transform: rotate(360deg);
   }
   100% {
-    transform: translateX(8px)  translateY(10px);
+    transform: rotate(0deg);
   }
 }
-
-
-@keyframes img {
-  0% {
-    transform: translateX(-8px);
-  }
-  25% {
-    transform: translateX(8px)  translateY(5px);
-  }
-  50% {
-    transform: translateX(-15px)  translateY(-5px);
-  }
-  75% {
-    transform: translateX(8px)  translateY(15px);
-  }
-  100% {
-    transform: translateX(-8px)  translateY(0px);
-  }
-}
-
 
 nav {
   width: 100%;
@@ -305,7 +291,7 @@ nav {
     width: 190px;
     display: block;
     height: 45px;
-    margin-top: 25px;
+    margin-top: 95px;
     cursor: pointer;
     border: none;
     border-radius: 4px;
@@ -382,7 +368,7 @@ nav {
     font-weight: 550;
     text-align: center;
     font-size: 28px;
-    color: #f7bb35;
+    color: rgba(255, 255, 255, 0.758);
   }
   ul {
     .nav-hover {
@@ -403,7 +389,7 @@ nav {
         i {
           font-size: 22px;
 
-          color: #06bcb9;
+          color: #a65dff;
         }
       }
     }
@@ -415,7 +401,7 @@ nav {
   border-radius: 50%;
   margin: 0 auto;
   margin-top: 20px;
-  border: 12px solid hsla(223, 97%, 55%, 0.767);
+  border: 12px solid#1c1e29;
   img {
     width: 100%;
     height: 100%;
@@ -580,7 +566,7 @@ nav {
     }
   }
 }
-#mx{
+#mx {
   display: none;
 }
 
@@ -610,13 +596,15 @@ nav {
     }
   }
 
-  #min{
+  #min {
     display: none;
   }
-  #mx{
+  #mx {
     display: block;
   }
-
+  .homimg {
+    animation-name: animatinw;
+  }
 }
 
 .nav-itme {
@@ -655,12 +643,7 @@ nav {
     display: block;
     width: 80%;
     height: 100%;
-    background: linear-gradient(
-      101.63deg,
-      #230a5c -21.52%,
-      #241788 55.18%,
-      #2542d0 93.18%
-    );
+    background-image: linear-gradient(to right, #11121a, #1b1d29);
     position: fixed;
     left: -100%;
     z-index: 999;
@@ -698,7 +681,6 @@ nav {
       margin-left: 78px;
     }
   }
-
 }
 
 @media screen and (max-width: 650px) {
@@ -765,7 +747,7 @@ nav {
     button {
       width: 140px;
       height: 43px;
-      margin-top: 40px;
+      margin-top: 90px;
       font-size: 15px;
     }
     h2 {
@@ -781,6 +763,12 @@ nav {
     }
     .hel {
       font-size: 25px;
+    }
+    .ic {
+      width: 150px;
+      i {
+        font-size: 30px;
+      }
     }
   }
   .hom {
@@ -798,9 +786,9 @@ nav {
     }
 
     .blur {
-      width: 100%;
+      width: 95%;
       margin-left: 10px;
-      margin-top: -110px;
+      margin-top: -20px;
     }
   }
 
@@ -827,13 +815,7 @@ nav {
       height: 299px;
       margin-left: 10px;
       transform: rotate(15deg);
-      margin-top: 100px;
-    }
-
-    .blur {
-      width: 100%;
-      margin-left: 10px;
-      margin-top: -110px;
+      margin-top: 90px;
     }
   }
 

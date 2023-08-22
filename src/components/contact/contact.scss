@@ -19,38 +19,20 @@
 
 .contact-me {
   text-align: center;
-  padding-top: 90px;
+  padding-top: 115px;
   font-family: "Poppins", sans-serif;
-  font-size: 35px;
-  color: #3cc099;
+  font-size: 40px;
+  color: #ffc815bd;
   font-weight: 700;
   letter-spacing: 1px;
-}
-.contact-me::before {
-  content: "";
-  position: absolute;
-  margin-top: 56px;
-  left: 50%;
-  width: 140px;
-  height: 4px;
-  background: #3cc099;
-  transform: translateX(-50%);
-}
 
-.contact-me::after {
-  content: "";
-  position: absolute;
-  margin-top: 51px;
-  left: 50%;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background: #3cc099;
-  transform: translateX(-50%);
+  .opasity {
+    margin-left: -65px;
+  }
 }
 
 .contact-card {
-  background: #fff;
+  background-image: linear-gradient(to right, #11121a, #1b1d29);
   width: 240px;
   margin: 20px;
   padding: 25px;
@@ -58,12 +40,12 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  box-shadow: 0 5px 25px rgba(1 1 1 /15%);
+  box-shadow: 0 5px 25px rgba(169, 169, 169, 0.084);
   border-radius: 10px;
   cursor: pointer;
 
   i {
-    color: #1833ff;
+    color: #11b181;
     font-size: 60px;
     text-align: center;
     transition: transform 0.5s ease;
@@ -71,7 +53,7 @@
   }
 
   h3 {
-    color: #1a66ff;
+    color: #24c09196;
     font-size: 20px;
     font-weight: 0;
     margin: 10px;
@@ -80,7 +62,7 @@
   }
   p {
     font-family: "Poppins", sans-serif;
-    color: #404041;
+    color: #b2bdc0;
   }
 }
 
@@ -91,16 +73,16 @@
 .contact-itmes1 {
   width: 600px;
   height: 560px;
-  background-color: #1833ff;
+  background-image: linear-gradient(to right, #11121a, #1b1d29);
+
   margin: 0 auto;
   margin-top: 45px;
-  background: #fff;
   align-items: center;
   flex-direction: column;
-  box-shadow: 0 5px 25px rgba(1 1 1 /15%);
+  box-shadow: 0 5px 25px rgba(169, 169, 169, 0.084);
   border-radius: 10px;
   h3 {
-    color: #0e0f10dc;
+    color: #b2bdc0;
     font-size: 24px;
     font-weight: 0;
     margin: 10px;
@@ -117,10 +99,19 @@
       border-radius: 5px;
       margin-top: 25px;
       outline: none;
-      border: none;
+
       border: 1.5px solid rgba(0, 0, 0, 0.726);
+      border: 1px solid white;
       font-size: 17px;
       padding-left: 15px;
+      background-image: linear-gradient(to right, #000000, #3f4154);
+      background-size: 200% auto;
+      background-position: right center;
+      transition: all 0.8s ease;
+      color: white;
+    }
+    input::placeholder {
+      color: white;
     }
 
     textarea {
@@ -132,7 +123,19 @@
       font-size: 17px;
       font-family: sans-serif;
       padding: 15px 15px;
+      background-color: #b7c1c4;
+      color: white;
+      background-image: linear-gradient(to right, #000000, #3f4154);
+      background-size: 200% auto;
+      background-position: right center;
+      transition: all 0.8s ease;
+      color: white;
+      border: 1px solid white;
     }
+  }
+  textarea::placeholder {
+    color: white;
+    font-size: 20px;
   }
 
   button {
@@ -149,29 +152,20 @@
     font-weight: 540;
     color: hsl(180, 20%, 91%);
     transition: 0.9s;
-    background: linear-gradient(
-      to right,
-      #089290 0%,
-      #65e6a1 51%,
-      hsla(226, 93%, 59%, 0.843) 100%
-    );
+    background-image: linear-gradient(to right, #000000, #252939);
     background-size: 200% auto;
-  }
-  button:hover {
     background-position: right center;
     transition: all 0.8s ease;
+  }
+  button:hover {
+    opacity: 0.5;
   }
 }
 
 .up {
   width: 100%;
   height: 120px;
-  background: linear-gradient(
-    101.63deg,
-    #230a5c -21.52%,
-    #241788 55.18%,
-    #2542d0 93.18%
-  );
+  background-color: #11121a;
 
   h3 {
     color: rgba(255, 255, 255, 0.845);
@@ -195,7 +189,6 @@
   }
 }
 @media screen and (max-width: 1245px) {
-
   .up {
     margin-top: 200px;
   }
@@ -213,3 +206,21 @@
   }
 }
 
+@media screen and (max-width: 414px) {
+  .contact-me {
+    .opasity {
+      margin-left: -50px;
+      font-size: 60px;
+    }
+  }
+}
+
+@media screen and (max-width: 483px) {
+  .contact-me {
+    .opasity {
+      margin-left: -40px;
+      font-size: 56px;
+      margin-top: -37px;
+    }
+  }
+}
