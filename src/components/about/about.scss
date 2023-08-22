@@ -136,7 +136,12 @@ section {
 .button {
   z-index: 999;
   position: fixed;
-  background: #ffb302;
+  background: linear-gradient(
+    to right,
+    #604608 0%,
+    #c29631 51%,
+    #d6b977 100%
+  );
   color: #fff;
   width: 45px;
   height: 45px;

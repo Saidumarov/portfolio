@@ -5,9 +5,9 @@ const Services = () => {
   return (
     <div id="services">
       <div className="services">
-        <div className="services-me reveal">My Services</div>
+        <div className="services-me reveal"> <span className="opasity"> My Services</span> <span className="myser">My Services</span></div>
         <div className="services-itme reveal ">
-          <p style={{ textAlign: "center" }}>
+          <p style={{ textAlign: "center" , fontSize:"18px"}} >
             Mening xizmatlarim Web Design, Web Developer ,Youtuber
           </p>
           <div className="services-itmes">
