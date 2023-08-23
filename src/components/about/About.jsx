@@ -44,7 +44,7 @@ function About() {
                 Junior Front-End dasturchiman kelajakda Back-Endni ham o'rganib
                 Full Stack dasturchi bo'lmoqchiman.
                 <br /> <br />
-                Hozirda men 17 yoshdaman oilada 2 farzandman . IT sohasiga
+                Hozirda men 17 yoshdaman oilada ikkinchi farzandman . IT sohasiga
                 2022-yilda kirib kelganman va Ishtixon IT Akademyda 7-oy ichida
                 Front-End sohasini real loyihalar asosida o'rgandim.
                 <div className="abo">

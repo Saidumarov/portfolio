@@ -1,8 +1,7 @@
 window.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("scroll", function () {
     const nav = document.querySelector(".nav");
-    nav.classList.toggle("sticky", window.scrollY > 70 );
-    
+    nav.classList.toggle("sticky", window.scrollY > 70);
   });
 
   window.addEventListener("scroll", () => {
@@ -18,8 +17,4 @@ window.addEventListener("DOMContentLoaded", function () {
       }
     }
   });
-  
-
 });
-
-

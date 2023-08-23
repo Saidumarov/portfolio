@@ -3,9 +3,6 @@ import React, { useEffect, useState } from "react";
 import Typed from "typed.js";
 import navimg from "../../assets/img/about.jpg";
 import hom from "../../assets/img/hom.png";
-
-import me from "../../assets/img/me1.jpg";
-
 const Navbar = () => {
   const el = React.useRef(null);
 
@@ -128,7 +125,6 @@ const Navbar = () => {
                 <div className="barr" style={{ transition: ".4s" }}></div>
               </div>
             </div>
-            {/* <div className="bot"></div> */}
           </div>
         </nav>
         <div className="hom">
@@ -145,9 +141,18 @@ const Navbar = () => {
               <button>SEE MY WORK</button>
             </span>
             <div className="ic">
-              <i class="fa-brands fa-youtube"></i>
-              <i class="fa-brands fa-instagram"></i>
-              <i class="fa-brands fa-telegram"></i>
+              <a href="https://youtube.com/@IT_Olami">
+                {" "}
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+              <a href="https://instagram.com/jafarxon_coding">
+                {" "}
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="https://t.me/jafarxon_blog">
+                {" "}
+                <i class="fa-brands fa-telegram"></i>
+              </a>
             </div>
           </div>
           <div className="homimg" id="min">

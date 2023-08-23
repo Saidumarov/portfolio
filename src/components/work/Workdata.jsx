@@ -13,28 +13,54 @@ import img9 from "../../assets/img/fut.png";
 import img10 from "../../assets/img/git.png";
 import img11 from "../../assets/img/ruy.png";
 
-
-
-
-
-
-
 const Workdata = () => {
   const data = [
-    { id: 1, 
-      img: img1  ,link:'https://todo-list-uzz.netlify.app' , a:`Todo-List.uz`},
-    { id: 2, img: img2 ,  link:`https://uzum-uz.netlify.app` , a:`Uzum-Market.uz`},
-    { id: 3, img: img3 , link:`https://logo-uz.netlify.app` , a:`Logo.uz`},
-    { id: 4, img: img7 , link:`https://Calculator-uzz.netlify.app` , a:`Calculator.uz` },
-    { id: 5, img: img5 , link:`https://1zumda.netlify.app` , a:`1Zumda.uz`},
-    { id: 6, img: img6 , link:`https://adds-uz.netlify.app` , a:`Adds.uz`},
-    { id: 7, img: img4 , link:`https://tasbehh-uz.netlify.app` , a:`Tasbeh.uz` },
-    { id: 8, img: img8  ,link:`https://pokemonn-uz.netlify.app` , a:`Pokemon.uz`},
-    { id: 9, img: img9  ,link:`https://futbol-uz.netlify.app` , a:`Futbol.uz`},
-    { id: 10, img: img10  ,link:`https://git-uz.netlify.app` , a:`Githup-Search.uz`},
-    { id: 11, img: img11  ,link:`https://students-listuz.netlify.app` , a:`Talabalar-Ruyhati.uz`},
-
-
+    {
+      id: 1,
+      img: img1,
+      link: "https://todo-list-uzz.netlify.app",
+      a: `Todo-List.uz`,
+    },
+    {
+      id: 2,
+      img: img2,
+      link: `https://uzum-uz.netlify.app`,
+      a: `Uzum-Market.uz`,
+    },
+    { id: 3, img: img3, link: `https://logo-uz.netlify.app`, a: `Logo.uz` },
+    {
+      id: 4,
+      img: img7,
+      link: `https://Calculator-uzz.netlify.app`,
+      a: `Calculator.uz`,
+    },
+    { id: 5, img: img5, link: `https://1zumda.netlify.app`, a: `1Zumda.uz` },
+    { id: 6, img: img6, link: `https://adds-uz.netlify.app`, a: `Adds.uz` },
+    {
+      id: 7,
+      img: img4,
+      link: `https://tasbehh-uz.netlify.app`,
+      a: `Tasbeh.uz`,
+    },
+    {
+      id: 8,
+      img: img8,
+      link: `https://pokemonn-uz.netlify.app`,
+      a: `Pokemon.uz`,
+    },
+    { id: 9, img: img9, link: `https://futbol-uz.netlify.app`, a: `Futbol.uz` },
+    {
+      id: 10,
+      img: img10,
+      link: `https://git-uz.netlify.app`,
+      a: `Githup-Search.uz`,
+    },
+    {
+      id: 11,
+      img: img11,
+      link: `https://students-listuz.netlify.app`,
+      a: `Talabalar-Ruyhati.uz`,
+    },
   ];
 
   const [visibleItems, setVisibleItems] = useState(6);
@@ -51,7 +77,9 @@ const Workdata = () => {
     <div>
       <div id="work">
         <div className="work">
-          <div className="work-me reveal"> <span className="opasity"> My Work</span>  My Work</div>
+          <div className="work-me reveal">
+            <span className="opasity"> My Work</span> My Work
+          </div>
           <div id="ww">
             {data.slice(0, visibleItems).map((item) => (
               <Work key={item.id} {...item} />

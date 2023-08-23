@@ -5,9 +5,12 @@ const Services = () => {
   return (
     <div id="services">
       <div className="services">
-        <div className="services-me reveal"> <span className="opasity"> My Services</span> <span className="myser">My Services</span></div>
+        <div className="services-me reveal">
+          <span className="opasity"> My Services</span>{" "}
+          <span className="myser">My Services</span>
+        </div>
         <div className="services-itme reveal ">
-          <p style={{ textAlign: "center" , fontSize:"18px"}} >
+          <p style={{ textAlign: "center", fontSize: "18px" }}>
             Mening xizmatlarim Web Design, Web Developer ,Youtuber
           </p>
           <div className="services-itmes">
@@ -36,7 +39,10 @@ const Services = () => {
                 <i class="fa-brands fa-youtube"></i>
               </div>
               <h3>Youtuber</h3>
-              <p>Men Youtubeda kanalimda o'zimning qiziqishlarim buyicha dasturlashga oid vedio-roliklar joylab boraman. </p>
+              <p>
+                Men Youtubeda kanalimda o'zimning qiziqishlarim buyicha
+                dasturlashga oid vedio-roliklar joylab boraman.{" "}
+              </p>
             </div>
           </div>
         </div>
