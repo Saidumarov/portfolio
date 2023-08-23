@@ -1,8 +1,8 @@
 import "./nav.scss";
 import React, { useEffect, useState } from "react";
 import Typed from "typed.js";
-import navimg from "../../assets/img/about.jpg";
-import hom from "../../assets/img/hom.png";
+import navimg from "../../assets/img/abjk1.jpg";
+import hom from "../../assets/img/homjk.png";
 const Navbar = () => {
   const el = React.useRef(null);
 
@@ -142,15 +142,12 @@ const Navbar = () => {
             </span>
             <div className="ic">
               <a href="https://youtube.com/@IT_Olami">
-                {" "}
                 <i class="fa-brands fa-youtube"></i>
               </a>
               <a href="https://instagram.com/jafarxon_coding">
-                {" "}
                 <i class="fa-brands fa-instagram"></i>
               </a>
               <a href="https://t.me/jafarxon_blog">
-                {" "}
                 <i class="fa-brands fa-telegram"></i>
               </a>
             </div>

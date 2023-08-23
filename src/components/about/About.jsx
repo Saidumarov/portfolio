@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./about.scss";
-import about from "../../assets/img/abjeg.jpg";
+import about from "../../assets/img/abjk.jpg";
 function About() {
   const [isActive, setIsActive] = useState(false);
 

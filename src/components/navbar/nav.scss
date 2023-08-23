@@ -1,5 +1,4 @@
-
-  @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -26,7 +25,6 @@ header {
 .homimg {
   width: 50%;
   height: 450px;
-  // background-color: #06bcb9;
   transition: all 1.3s ease;
   height: 600px;
   position: relative;
@@ -41,27 +39,28 @@ header {
   justify-content: space-between;
   margin: 0 auto;
   position: relative;
-  // background-color: #06bcb9;
+
   img {
-    width: 730px;
-    height: 600px;
-    margin-left: -150px;
-    margin-top: -10px;
-    object-fit: cover;
-    // animation: img infinite;
+    width: 850px;
+    height: 850px;
+    margin-left: -120px;
+    margin-top: -220px;
+    object-fit: contain;
+    filter: brightness(0.69);
     animation-duration: 5.6s;
   }
   .blur {
-    width: 450px;
+    width: 380px;
     height: 60px;
     box-shadow: 0px 3px 18px 0px #000000;
-    background-image: linear-gradient(
-      to left bottom,
-      #000000e6,
-      rgba(0, 0, 0, 0.792)
-    );
-    filter: blur(15px);
-    margin-left: 130px;
+    // background-image: linear-gradient(
+    //   to left bottom,
+    //   #000000e6,
+    //   rgba(0, 0, 0, 0.792)
+    // );
+    background-color: #090a0c;
+    filter: blur(12px);
+    margin-left: 220px;
     margin-top: -35px;
     position: relative;
     z-index: 3;
@@ -77,8 +76,8 @@ header {
     #dcbd77 100%
   );
   transform: rotate(13deg);
-  margin-top: -10px;
-  margin-left: 50px;
+  margin-top: 5px;
+  margin-left: 120px;
   box-shadow: 0px 3px 18px 5px #ffc815;
   position: absolute;
   z-index: -1;
@@ -241,7 +240,6 @@ nav {
   transition: all 1.3s ease;
   animation-name: animatin;
   animation-duration: 1s;
-
   .animaty1 {
     transition: all 1.3s ease;
     position: relative;
@@ -401,6 +399,7 @@ nav {
   margin: 0 auto;
   margin-top: 20px;
   border: 12px solid#1c1e29;
+  object-fit: cover;
   img {
     width: 100%;
     height: 100%;
@@ -521,52 +520,47 @@ nav {
 @media screen and (max-width: 1350px) {
   .hom {
     img {
-      width: 700px;
-      height: 600px;
-      margin-left: -150px;
-      margin-top: -50px;
-      object-fit: cover;
+      margin-top: -250px;
+      margin-left: -160px;
     }
     .hom-itme {
-      width: 450px;
-      height: 450px;
+      width: 500px;
+      height: 500px;
+      margin-top: 50px;
+    }
+    .blur {
+      margin-left: 190px;
     }
   }
 }
 @media screen and (max-width: 1230px) {
   .hom {
     img {
-      width: 650px;
-      height: 600px;
-      margin-left: -150px;
-      margin-top: -50px;
-      object-fit: cover;
+      width: 800px;
+      height: 800px;
+      margin-top: -200px;
+      margin-left: -160px;
     }
     .hom-itme {
-      width: 430px;
-      height: 430px;
-      margin-left: 20px;
+      width: 480px;
+      height: 480px;
+      margin-top: 50px;
+      margin-left: 80px;
     }
-  }
-}
-@media screen and (max-width: 1230px) {
-  .hom {
-    img {
-      width: 600px;
-      height: 580px;
-      margin-left: -150px;
-      margin-top: -50px;
-      object-fit: cover;
-    }
-    .hom-itme {
-      width: 410px;
-      height: 410px;
-      margin-left: 10px;
+    .blur {
+      margin-left: 160px;
     }
   }
 }
 #mx {
   display: none;
+}
+@media screen and (max-width: 1086px) {
+  .nav-itme {
+    h1 {
+      font-size: 42px;
+    }
+  }
 }
 
 @media screen and (max-width: 1030px) {
@@ -576,22 +570,17 @@ nav {
     margin: 0 auto;
     position: relative;
 
-    img {
-      width: 750px;
-      height: 650px;
-      margin-left: -150px;
-      margin-top: -50px;
-      object-fit: cover;
-    }
+
   }
   .homimg {
     width: 100%;
     margin-top: 250px;
 
     .hom-itme {
-      width: 500px;
-      height: 500px;
+      width: 550px;
+      height: 550px;
       margin-left: 80px;
+      margin-top: 30px;
     }
   }
 
@@ -666,13 +655,10 @@ nav {
 }
 @media screen and (max-width: 740px) {
   .hom {
-    img {
-      width: 650px;
-      height: 600px;
-    }
+
     .hom-itme {
-      width: 430px;
-      height: 430px;
+      width: 500px;
+      height: 500px;
     }
 
     .blur {
@@ -684,6 +670,7 @@ nav {
 
 @media screen and (max-width: 650px) {
   .nav-itme {
+    margin-left: 50px;
     h2 {
       // font-size: 32px;
       padding-top: 150px;
@@ -701,14 +688,13 @@ nav {
   .hom {
     margin-bottom: -100px;
     img {
-      width: 550px;
-      height: 500px;
+      width: 800px;
+      height: 750px;
     }
     .hom-itme {
-      width: 350px;
-      height: 350px;
-      margin-left: 30px;
-      transform: rotate(15deg);
+      width: 450px;
+      height: 450px;
+      margin-left: 100px;
     }
 
     .blur {
@@ -717,6 +703,7 @@ nav {
     }
   }
   .nav-itme {
+    margin-left: 90px;
     h2 {
       font-size: 45px;
       padding-top: 150px;
@@ -774,20 +761,13 @@ nav {
     margin-bottom: -150px;
 
     img {
-      width: 480px;
-      height: 450px;
+      width: 700px;
+      height: 680px;
     }
     .hom-itme {
-      width: 300px;
-      height: 299px;
-      margin-left: 20px;
-      transform: rotate(15deg);
-    }
-
-    .blur {
-      width: 95%;
-      margin-left: 10px;
-      margin-top: -20px;
+      width: 400px;
+      height: 400px;
+      margin-left: 80px;
     }
   }
 
@@ -797,8 +777,15 @@ nav {
   }
 }
 
+@media screen and (max-width: 450px) {
+  .nav-itme {
+    margin-left: 120px;
+  }
+}
+
 @media screen and (max-width: 380px) {
   .nav-itme {
+    margin-left: 110px;
     h1 {
       font-size: 27px;
     }
@@ -806,15 +793,14 @@ nav {
   .hom {
     margin-bottom: -150px;
     img {
-      width: 480px;
-      height: 450px;
+      width: 680px;
+      height: 620px;
     }
     .hom-itme {
-      width: 300px;
-      height: 299px;
-      margin-left: 10px;
-      transform: rotate(15deg);
-      margin-top: 90px;
+      width: 335px;
+      height: 345px;
+      margin-left: 95px;
+      margin-top: 0;
     }
   }
 
@@ -823,4 +809,3 @@ nav {
     justify-content: center;
   }
 }
-
