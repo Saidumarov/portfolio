@@ -53,11 +53,6 @@ header {
     width: 380px;
     height: 60px;
     box-shadow: 0px 3px 18px 0px #000000;
-    // background-image: linear-gradient(
-    //   to left bottom,
-    //   #000000e6,
-    //   rgba(0, 0, 0, 0.792)
-    // );
     background-color: #090a0c;
     filter: blur(12px);
     margin-left: 220px;
@@ -243,7 +238,7 @@ nav {
   .animaty1 {
     transition: all 1.3s ease;
     position: relative;
-    animation-name: animat1;
+    animation-name: animat1;  
     animation-duration: 1s;
     position: absolute;
   }
@@ -569,8 +564,6 @@ nav {
     justify-content: center;
     margin: 0 auto;
     position: relative;
-
-
   }
   .homimg {
     width: 100%;
@@ -655,7 +648,6 @@ nav {
 }
 @media screen and (max-width: 740px) {
   .hom {
-
     .hom-itme {
       width: 500px;
       height: 500px;

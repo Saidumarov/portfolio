@@ -26,8 +26,8 @@ function About() {
       <section>
         <div className="about">
           <div className="about-me reveal">
-      
-            <span className="opasity">About Me</span> <span className="ab">About Me</span>
+            <span className="opasity">About Me</span>{" "}
+            <span className="ab">About Me</span>
           </div>
           <div className="about-contenr">
             <div className="about-con-itme1 reveal">
@@ -39,35 +39,35 @@ function About() {
                 I'm Ja'farxon Saidumarov
               </h2>
               <p>
-                Assalomu alaykum, men Saidumarov Ja'farxon, men veb-sayt
-                yaratuvchiman, shu sohada endi tajriba oshiryapman, hozirda
-                Junior Front-End dasturchiman kelajakda Back-Endni ham o'rganib
-                Full Stack dasturchi bo'lmoqchiman.
+                Hello, I am Saidumarov Ja'farxon. I am a website creator and I
+                am currently gaining experience in this field. Currently, I am a
+                Junior Front-End developer, and in the future, I want to learn
+                Back-End as well to I want to be a Full Stack developer.
                 <br /> <br />
-                Hozirda men 17 yoshdaman oilada ikkinchi farzandman . IT sohasiga
-                2022-yilda kirib kelganman va Ishtixon IT Akademyda 7-oy ichida
-                Front-End sohasini real loyihalar asosida o'rgandim.
+                Now I am 17 years old and I am the second child in the family. I
+                entered the IT field in 2022 and learned the Front-End field
+                through real projects for 7 months at Istikhon IT Academy
                 <div className="abo">
                   <p>
-                    <span style={{ color: "#ffda60" }}>Tug'ilgan kun: </span>
+                    <span style={{ color: "#ffda60" }}>Birthday: </span>
                     2006-yil, 25 aprel
                   </p>
                   <p className="abop1">
-                    <span style={{ color: "#ffda60" }}>Yosh:</span> 17
+                    <span style={{ color: "#ffda60" }}>Age:</span> 17
                   </p>
                 </div>
                 <div className="abo">
                   <p>
-                    <span style={{ color: "#ffda60" }}>Kanal:</span>
+                    <span style={{ color: "#ffda60" }}>Channel:</span>
                     <a
-                      href="https://t.me/jafarxon_blog" style={{textDecoration:"none", color:"white"}}
+                      href="https://t.me/jafarxon_blog"
+                      style={{ textDecoration: "none", color: "white" }}
                     >
-              
                       https://t.me/jafarxon_blog
                     </a>
                   </p>
                   <p className="abop2">
-                    <span style={{ color: "#ffda60" }}> Daraja:</span> Junior
+                    <span style={{ color: "#ffda60" }}> Degree:</span> Junior
                   </p>
                 </div>
               </p>

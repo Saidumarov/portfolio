@@ -11,7 +11,7 @@ const Services = () => {
         </div>
         <div className="services-itme reveal ">
           <p style={{ textAlign: "center", fontSize: "18px" }}>
-            Mening xizmatlarim Web Design, Web Developer ,Youtuber
+            My services are Web Design, Web Developer, Youtuber
           </p>
           <div className="services-itmes">
             <div className="services-itmes1 reveal ">
@@ -20,8 +20,8 @@ const Services = () => {
               </div>
               <h3>Web Design</h3>
               <p>
-                Men Front-End buyicha web-dizayin ham yarata olamn bunda men
-                asosan Figma.com sayitidan foydalanamn.
+                I can also create front-end web designs. I primarily use the
+                Figma.com website for this.
               </p>
             </div>
             <div className="services-itmes2 reveal">
@@ -30,8 +30,8 @@ const Services = () => {
               </div>
               <h3>Web Developer</h3>
               <p>
-                Mening asosiy soham bu Front-End va bunda men mahalliy kodlash
-                bilan veb-saytlarni yarata olaman.
+                My main field is Front-End and in this I can build websites
+                using native coding
               </p>
             </div>
             <div className="services-itmes3 reveal">
@@ -40,8 +40,8 @@ const Services = () => {
               </div>
               <h3>Youtuber</h3>
               <p>
-                Men Youtubeda kanalimda o'zimning qiziqishlarim buyicha
-                dasturlashga oid vedio-roliklar joylab boraman.{" "}
+                I upload video clips related to programming based on my
+                interests on my YouTube channel.
               </p>
             </div>
           </div>
