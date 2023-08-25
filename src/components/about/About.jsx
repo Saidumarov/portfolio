@@ -46,7 +46,8 @@ function About() {
                 <br /> <br />
                 Now I am 17 years old and I am the second child in the family. I
                 entered the IT field in 2022 and learned the Front-End field
-                through real projects for 7 months at Istikhon IT Academy
+                through real projects for 7 months at{" "}
+                <span style={{ color: "#DB00A2" }}>Ishtixon IT Academy</span>
                 <div className="abo">
                   <p>
                     <span style={{ color: "#ffda60" }}>Birthday: </span>
