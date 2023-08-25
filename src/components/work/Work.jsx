@@ -3,7 +3,8 @@ import "./work.scss";
 
 const Work = (itme) => {
   const { img, link, a, id } = itme;
-  const isReveal = id === 1 || id === 2 || id === 3 ||id === 4 ||id === 5 || id === 6 ;
+  const isReveal =
+    id === 1 || id === 2 || id === 3 || id === 4 || id === 5 || id === 6;
 
   return (
     <div className={`work-itmes ${isReveal ? "reveal" : ""}`}>
