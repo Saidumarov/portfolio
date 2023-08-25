@@ -1,7 +1,7 @@
 import "./nav.scss";
 import React, { useEffect, useState } from "react";
 import Typed from "typed.js";
-import navimg from "../../assets/img/abjk1.jpg";
+import navimg from "../../assets/img/about1.jpg";
 import hom from "../../assets/img/homjk.png";
 const Navbar = () => {
   const el = React.useRef(null);
