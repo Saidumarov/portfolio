@@ -1,67 +1,75 @@
 import React, { useState } from "react";
 import "./contact.scss";
+
 const Contact = () => {
   const [fulnam, setFulnam] = useState("");
   const [tel, setTel] = useState("");
   const [email, setEmail] = useState("");
+  const [image, setImage] = useState(null);
   const name = document.querySelector("#nem");
   const tell = document.querySelector("#tel");
   const text = document.querySelector("#text");
+  const img = document.querySelector("#img");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    rest();
+    reset();
     const id = 1121426146;
     const bot = "6510464853:AAGkV9IleiYtJCj9NwiX8zg8fuaQO5k_j34";
 
-    let massge = `Name: ${fulnam}\nEmail: ${tel}\nMessage: ${email}`;
+    const formData = new FormData();
+    formData.append("chat_id", id);
+    formData.append("photo", image);
+    formData.append(
+      "caption",
+      `Name: ${fulnam}\nEmail: ${tel}\nMessage: ${email}`
+    );
 
-    fetch(`https://api.telegram.org/bot${bot}/sendMessage`, {
+    fetch(`https://api.telegram.org/bot${bot}/sendPhoto`, {
       method: "post",
-      body: JSON.stringify({
-        chat_id: id,
-        text: massge,
-      }),
-      headers: {
-        "Content-Type": "application/json",
-        "cache-control": "no-cache",
-      },
+      body: formData,
     })
       .then((res) => res.json())
       .then((data) => console.log(data));
   };
 
-  const rest = () => {
+  const reset = () => {
     text.value = "";
     name.value = "";
     tell.value = "";
+    img.value = "";
   };
+
+  const handleImageChange = (e) => {
+    const selectedImage = e.target.files[0];
+    setImage(selectedImage);
+  };
+
   return (
     <div id="contact">
       <div className="contact">
         <div className="contact-me reveal">
-          {" "}
           <span className="opasity">Contact Me</span> Contact Me{" "}
         </div>
         <div className="contact-itme">
           <div className="contact-itmes">
             <div className="contact-card reveal">
-              <i class="fas fa-map-marker-alt"></i>
+              <i className="fas fa-map-marker-alt"></i>
               <h3>Address</h3>
               <p>Ishtixon City</p>
             </div>
             <div className="contact-card reveal">
-              <i class="fas fa-phone"></i>
+              <i className="fas fa-phone"></i>
               <h3>Phone</h3>
               <p>+998 99-058-07-14</p>
             </div>
             <div className="contact-card reveal">
-              <i class="fas fa-envelope"></i>
+              <i className="fas fa-envelope"></i>
               <h3>Email Address</h3>
               <p>ja'farxon@gmail.com</p>
             </div>
             <div className="contact-card reveal">
-              <i class="fas fa-globe"></i>
+              <i className="fas fa-globe"></i>
               <h3>Website</h3>
               <p>MyPortfolio.uz</p>
             </div>
@@ -70,7 +78,7 @@ const Contact = () => {
             <h3>Send Message</h3>
             <form className="form" onSubmit={handleSubmit}>
               <input
-                type="name "
+                type="text"
                 placeholder="Name"
                 required
                 value={fulnam}
@@ -94,6 +102,14 @@ const Contact = () => {
                 id="text"
                 onChange={(e) => setEmail(e.target.value)}
               ></textarea>
+              <i class="fa-solid fa-image" id="imgg"></i>
+              <input
+                type="file"
+                accept="image/*"
+                onChange={handleImageChange}
+                id="img"
+              />
+              <label htmlFor="img">Choose a Photo</label>
               <button type="submit">SEND</button>
             </form>
           </div>
