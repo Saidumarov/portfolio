@@ -1,28 +1,33 @@
 import React, { useState } from "react";
 import "./contact.scss";
+import Loading from "../loader";
 
 const Contact = () => {
   const [fulnam, setFulnam] = useState("");
-  const [tel, setTel] = useState("");
+  const [message, setMessage] = useState("");
   const [email, setEmail] = useState("");
-  const [image, setImage] = useState(null);
-  const name = document.querySelector("#nem");
-  const tell = document.querySelector("#tel");
-  const text = document.querySelector("#text");
-  const img = document.querySelector("#img");
+  const [image, setImage] = useState(null); // Null as initial state
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    reset();
+
+    if (!image) {
+      setError("Please choose an image.");
+      return;
+    }
+
+    // Continue with sending the data
     const id = 1121426146;
     const bot = "6510464853:AAGkV9IleiYtJCj9NwiX8zg8fuaQO5k_j34";
-
+    setIsLoading(true);
     const formData = new FormData();
     formData.append("chat_id", id);
     formData.append("photo", image);
     formData.append(
       "caption",
-      `Name: ${fulnam}\nEmail: ${tel}\nMessage: ${email}`
+      `Name: ${fulnam}\nEmail: ${email}\nMessage: ${message}`
     );
 
     fetch(`https://api.telegram.org/bot${bot}/sendPhoto`, {
@@ -30,19 +35,27 @@ const Contact = () => {
       body: formData,
     })
       .then((res) => res.json())
-      .then((data) => console.log(data));
+      .then((data) => {
+        console.log(data);
+        reset();
+        setTimeout(() => {
+          setIsLoading(false);
+        }, 500);
+      });
   };
 
   const reset = () => {
-    text.value = "";
-    name.value = "";
-    tell.value = "";
-    img.value = "";
+    setEmail("");
+    setFulnam("");
+    setImage(null); // Reset to null
+    setMessage("");
+    setError("");
   };
 
   const handleImageChange = (e) => {
     const selectedImage = e.target.files[0];
     setImage(selectedImage);
+    setError(""); // Clear any previous error message
   };
 
   return (
@@ -89,28 +102,32 @@ const Contact = () => {
                 type="email"
                 placeholder="Email"
                 required
-                value={tel}
+                value={email}
                 id="tel"
-                onChange={(e) => setTel(e.target.value)}
+                onChange={(e) => setEmail(e.target.value)}
               />
               <textarea
                 cols="80"
                 rows="8"
                 placeholder="Message"
                 required
-                value={email}
+                value={message}
                 id="text"
-                onChange={(e) => setEmail(e.target.value)}
+                onChange={(e) => setMessage(e.target.value)}
               ></textarea>
               <i class="fa-solid fa-image" id="imgg"></i>
-              <input
-                type="file"
-                accept="image/*"
-                onChange={handleImageChange}
-                id="img"
-              />
+              <input type="file" onChange={handleImageChange} id="img" />
               <label htmlFor="img">Choose a Photo</label>
-              <button type="submit">SEND</button>
+              <div className="error-message">
+                {error && <div> {error}</div>}
+              </div>
+              <button
+                className="send_button"
+                type="submit"
+                disabled={isLoading}
+              >
+                {isLoading ? <Loading /> : "SEND"}
+              </button>
             </form>
           </div>
         </div>
