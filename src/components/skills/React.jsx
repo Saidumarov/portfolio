@@ -40,7 +40,7 @@ const React1 = () => {
     const handleScroll = () => {
       if (!countdownStarted && window.scrollY > 1000) {
         setCountdownStarted(true);
-        setWiz(75);
+        setWiz(true);
         setCurrentNumber(1);
       }
     };
@@ -50,7 +50,7 @@ const React1 = () => {
   }, [countdownStarted]);
 
   useEffect(() => {
-    if (countdownStarted && currentNumber <= 74) {
+    if (countdownStarted && currentNumber <= 84) {
       const interval = setInterval(() => {
         setCurrentNumber((prevNumber) => {
           if (prevNumber < 99) {

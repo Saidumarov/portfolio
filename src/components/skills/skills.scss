@@ -246,12 +246,12 @@ svg {
 }
 
 .circle5.active {
-  animation: anim5 3.8s linear forwards;
+  animation: anim5 4.5s linear forwards;
 }
 
 @keyframes anim5 {
   100% {
-    stroke-dashoffset: 131;
+    stroke-dashoffset: 98;
   }
 }
 
