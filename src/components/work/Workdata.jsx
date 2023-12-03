@@ -12,14 +12,16 @@ import img8 from "../../assets/img/poke.png";
 import img9 from "../../assets/img/fut.png";
 import img10 from "../../assets/img/git.png";
 import img11 from "../../assets/img/ruy.png";
+import img12 from "../../assets/img/qll.jpg";
+import img13 from "../../assets/img/youtube.jpg";
 
 const Workdata = () => {
   const data = [
     {
       id: 1,
-      img: img1,
-      link: "https://todo-list-uzz.netlify.app",
-      a: `Todo-List.uz`,
+      img: img13,
+      link: "https://you-tube-demo.vercel.app/",
+      a: `You Tube.uz`,
     },
     {
       id: 2,
@@ -30,12 +32,18 @@ const Workdata = () => {
     { id: 3, img: img3, link: `https://logo-uz.netlify.app`, a: `Logo.uz` },
     {
       id: 4,
-      img: img7,
-      link: `https://Calculator-uzz.netlify.app`,
-      a: `Calculator.uz`,
+      img: img12,
+      link: `https://all-quranuz.netlify.app/`,
+      a: `Al-Quran.uz`,
     },
+
     { id: 5, img: img5, link: `https://1zumda.netlify.app`, a: `1Zumda.uz` },
-    { id: 6, img: img6, link: `https://adds-uz.netlify.app`, a: `Adds.uz` },
+    {
+      id: 6,
+      img: img1,
+      link: "https://todo-list-uzz.netlify.app",
+      a: `Todo-List.uz`,
+    },
     {
       id: 7,
       img: img4,
@@ -61,6 +69,13 @@ const Workdata = () => {
       link: `https://students-listuz.netlify.app`,
       a: `Talabalar-Ruyhati.uz`,
     },
+    {
+      id: 12,
+      img: img7,
+      link: `https://Calculator-uzz.netlify.app`,
+      a: `Calculator.uz`,
+    },
+    { id: 13, img: img6, link: `https://adds-uz.netlify.app`, a: `Adds.uz` },
   ];
 
   const [visibleItems, setVisibleItems] = useState(6);
